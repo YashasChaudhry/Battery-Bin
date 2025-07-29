@@ -58,8 +58,14 @@ footer {
     color: black;
     margin-top: 200px;
     text-align: center;
+    background-color: #f6f6f8
 }
 
+.active {
+    color: white !important;
+}
+
+/* Not Used Now
 .card-effect {
     transition: all 0.5s;
 }
@@ -67,12 +73,71 @@ footer {
 .card-effect:hover {
     box-shadow: 0 0 5px 0;
     transform: translateX(5px);
+}*/
+
+
+.how-it-works-large {
+    padding: 40px 20px;
+    background: #f0faf4;
+    /* soft eco background */
 }
 
-.active {
-    color: white !important;
+.how-it-works-large h1 {
+    font-size: 2.4rem;
+    text-align: center;
+    color: #2e7d32;
+    /* eco green */
+    margin-bottom: 40px;
 }
 
-footer {
-    background-color: #f6f6f8
+.large-step-box {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 40px 30px;
+    margin: 30px auto;
+    max-width: 1000px;
+    /* almost full width on big screens */
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.large-step-box:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.15);
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background-color: #4caf50;
+    /* green circle */
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+.large-step-box h2 {
+    font-size: 1.8rem;
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+.large-step-box p {
+    font-size: 1.05rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.how-it-works-large h1 {
+    padding-top: 80px;
+    /* or whatever looks good */
+}
+
+.contact-box {
+    padding-top: 80px;
 }
