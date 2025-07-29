@@ -1,0 +1,79 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    max-width: 900px;
+    margin: 100px auto;
+    /* more space above & below each section */
+    padding: 100px 20px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+
+.section h1 {
+    color: #3b5e2b;
+    margin-bottom: 20px;
+}
+
+#our-impact {
+    padding-bottom: 168px
+}
+
+#our-story {
+    padding-bottom: 175px
+}
+
+.section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.divider {
+    width: 80px;
+    height: 4px;
+    background-color: #c46828;
+    /* your accent color */
+    margin: 60px auto;
+    /* more space above & below divider */
+    border-radius: 2px;
+}
+
+/* Example: extra gap class you might want to add */
+.extra-gap {
+    margin-bottom: 100px;
+}
+
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+
+footer {
+    color: black;
+    padding: 50px 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.card-effect {
+    transition: all 0.5s;
+}
+
+.card-effect:hover {
+    box-shadow: 0 0 5px 0;
+    transform: translateX(5px);
+}
+
+.active {
+    color: white !important;
+}
+
+footer {
+    background-color: #f6f6f8
+}
