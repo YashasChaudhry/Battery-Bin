@@ -182,3 +182,32 @@ footer {
         border-color: transparent
     }
 }
+
+.card {
+    max-width: 600px;
+    /* cards won't be wider than 500px on large screens */
+    margin-left: auto;
+    /* center horizontally */
+    margin-right: auto;
+}
+
+.natural-img {
+    width: 100%;
+    height: auto;
+    /* keeps natural aspect ratio, no stretch */
+    display: block;
+}
+
+.col {
+    margin-bottom: 40px;
+    /* or try 50px, 60px for even more gap */
+}
+
+.scroll-offset::before {
+    content: "";
+    display: block;
+    height: 100px;
+    /* height of navbar */
+    margin-top: -100px;
+    /* negative same amount to offset */
+}
