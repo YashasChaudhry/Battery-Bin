@@ -211,3 +211,7 @@ footer {
     margin-top: -100px;
     /* negative same amount to offset */
 }
+
+footer {
+    margin-top: 0 !important;
+}
