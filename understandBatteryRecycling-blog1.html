@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Understanding Battery Recycling | Battery Bin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" class="css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="LogoTop.png" type="image/png">
+    <style>
+        body {
+            background-color: #f7f7f7;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #2e7d32;
+        }
+
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 60px 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .highlight {
+            background: #e8f5e9;
+            border-left: 4px solid #2e7d32;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .blog-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+
+        .cta-btn {
+            background-color: #2e7d32;
+            color: #fff;
+            border: none;
+            font-weight: 500;
+        }
+
+        .cta-btn:hover {
+            background-color: #256528;
+            color: #fff;
+        }
+
+        .navbar-nav .nav-link {
+            color: #2e7d32;
+            font-weight: 500;
+            position: relative;
+            text-decoration: none !important;
+        }
+
+        .navbar-nav .nav-link:not(.active)::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #2e7d32;
+            transition: width 0.3s;
+            margin: auto;
+        }
+
+        .navbar-nav .nav-link:not(.active):hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Start of NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="logo.png" alt="Battery Bin Logo" class="rounded-circle me-2" style="height: 45px;">
+                    <span style="font-weight: 600; font-size: 1.2rem; color: #2e7d32;">
+                        Battery Bin 🌱
+                    </span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mx-auto">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">About Us</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="about-us.html#our-story">Our Story</a></li>
+                                    <li><a class="dropdown-item" href="about-us.html#our-mission">Our Mission</a></li>
+                                    <li><a class="dropdown-item" href="about-us.html#our-impact">Our Impact</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="how-it-works.html">How It Works</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="updates.html">Updates</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Our Network</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="our-network.html#step-by-step-school">Step By
+                                            Step School, Noida</a></li>
+                                    <li><a class="dropdown-item" href="our-network.html#ch-chhbil-dass">Ch.Chhabil Dass
+                                            Public School, Ghaziabad</a></li>
+                                    <li><a class="dropdown-item" href="our-network.html#a-sons-exclusives">A Sons
+                                            Exclusives</a></li>
+                                    <li><a class="dropdown-item" href="our-network.html#mobile-arena">Mobile Arena</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="blogs-resources.html" class="btn blog-btn ms-lg-3 mt-2 mt-lg-0">Blog or Resources</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End of NAVBAR -->
+
+    <main style="margin-top: 100px; margin-bottom: 40px;">
+        <h1 class="mb-4 text-center">Understanding Battery Recycling</h1>
+        <p class="text-muted text-center mb-5">Why recycling batteries matters, its environmental impact, and how you
+            can help.</p>
+
+        <!-- Section 1: Introduction -->
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <img src="Blog1-Pic1.png" alt="Battery Recycling" class="img-fluid rounded shadow scale-hover">
+            </div>
+            <div class="col-md-6">
+                <h3>♻ Why does battery recycling matter?</h3>
+                <p>Batteries power our daily lives – from smartphones to cars – but once discarded, they can become
+                    hazardous to the environment.</p>
+                <p>Recycling batteries helps recover valuable materials and prevents toxic substances from polluting
+                    soil and water.</p>
+                <div class="highlight mt-3">
+                    <strong>Did you know?</strong> Over 90% of a lead-acid battery can be recycled, saving natural
+                    resources and energy!
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Environmental Impact -->
+        <div class="row align-items-center flex-md-row-reverse mb-5">
+            <div class="col-md-6">
+                <img src="Blog1-Pic2.png" alt="Environmental impact" class="img-fluid rounded shadowc scale-hover">
+            </div>
+            <div class="col-md-6">
+                <h3>🌱 Environmental impact of improper disposal</h3>
+                <p>When batteries end up in landfills, harmful chemicals like lead, cadmium, and mercury can leach into
+                    the ground and water sources.</p>
+                <p>This poses serious health risks to both humans and wildlife. Recycling prevents this and reduces the
+                    need for mining raw materials.</p>
+            </div>
+        </div>
+
+        <!-- Section 3: What You Can Do -->
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <img src="Blog1-Pic3.png" alt="Battery Collection" class="img-fluid rounded shadow scale-hover">
+            </div>
+            <div class="col-md-6">
+                <h3>🙌 How you can help</h3>
+                <ul>
+                    <li>Collect and store used batteries safely at home.</li>
+                    <li>Drop them at designated Battery Bin collection points or events.</li>
+                    <li>Encourage friends, family, and schools to participate.</li>
+                    <li>Stay informed about safe battery disposal practices.</li>
+                </ul>
+                <div class="mt-3">
+                    <a href="our-network.html" class="btn cta-btn px-4 py-2">Find a Battery Bin Near You</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4: Learn More -->
+        <div class="text-center">
+            <h3 class="mt-5">🔍 Learn more</h3>
+            <p>For detailed guides, educational posters, and volunteer opportunities, check out our <a
+                    href="blogs-resources.html" style="color:#2e7d32; text-decoration: underline;">Blog or Resources</a>
+                page.</p>
+        </div>
+    </main>
+
+
+    <!-- Start of FOOTER -->
+    <footer>
+        <div class="border-bottom border-top border-3 pb-1">
+            <div class="py-3 d-flex justify-content-center flex-wrap">
+                <div class="mx-4 mb-2">
+                    <img src="community-driven.png" alt="" style="height: 50px;">
+                    <b>Community Driven</b>
+                </div>
+                <div class="mx-4 mb-2">
+                    <img src="environment-first.png" alt="" style="height: 50px;">
+                    <b>Environment First</b>
+                </div>
+                <div class="mx-4 mb-2">
+                    <img src="safe-battery-recycling.png" alt="" style="height: 50px;">
+                    <b>Safe Battery Recycling</b>
+                </div>
+                <div class="mx-4 mb-2">
+                    <img src="transparent-impact.png" alt="" style="height: 50px;">
+                    <b>Transparent Impact</b>
+                </div>
+            </div>
+        </div>
+        <div class="p-3 text-center" style="font-size: 0.95em;">
+            &copy; Battery Bin All Rights Reserved | Developed by <i>Yashas Chaudhry</i> |
+            <a href="privacy-policy.html" style="color: #2e7d32; text-decoration: none;">Privacy Policy</a> |
+            <a href="terms-of-service.html" style="color: #2e7d32; text-decoration: none;">Terms of Service</a>
+        </div>
+    </footer>
+    <!-- End of FOOTER -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
