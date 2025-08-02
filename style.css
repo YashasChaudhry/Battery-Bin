@@ -61,10 +61,6 @@ footer {
     background-color: #f6f6f8
 }
 
-.active {
-    color: white !important;
-}
-
 /* Not Used Now
 .card-effect {
     transition: all 0.5s;
@@ -214,4 +210,25 @@ footer {
 
 footer {
     margin-top: 0 !important;
+}
+
+/* Optional: Add smooth hover effect for nav-links */
+.nav-link {
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #2e7d32 !important;
+}
+
+/* Optional: Change active link color */
+.nav-link.active {
+    color: #2e7d32 !important;
+    font-weight: 500;
+}
+
+/* Dropdown menu slightly rounded and shadow */
+.dropdown-menu {
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
 }
