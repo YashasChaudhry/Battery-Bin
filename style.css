@@ -258,3 +258,18 @@ footer {
     font-weight: 600;
     box-shadow: 0 0 8px rgba(27, 94, 32, 0.6);
 }
+
+.ribbon {
+    position: absolute;
+    top: 12px;
+    right: -20px;
+    transform: rotate(45deg);
+    background: #2e7d32;
+    /* Green */
+    color: white;
+    font-weight: bold;
+    padding: 5px 35px;
+    font-size: 0.75rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+}
