@@ -30,7 +30,8 @@
                         Battery Bin 🌱
                     </span>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -40,7 +41,8 @@
                                 <a class="nav-link" href="index.html">Home</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
                                     About Us
                                 </a>
                                 <ul class="dropdown-menu">
@@ -57,18 +59,20 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle active" href="#" role="button"
-                                    data-bs-toggle="dropdown">
+                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     Our Network
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="our-network.html#step-by-step-school">Step By
-                                            Step School, Noida</a></li>
+                                            Step
+                                            School, Noida</a></li>
                                     <li><a class="dropdown-item" href="our-network.html#ch-chhbil-dass">Ch.Chhabil Dass
                                             Public School, Ghaziabad</a></li>
                                     <li><a class="dropdown-item" href="our-network.html#a-sons-exclusives">A Sons
                                             Exclusives</a></li>
                                     <li><a class="dropdown-item active" href="our-network.html#mobile-arena">Mobile
-                                            Arena</a></li>
+                                            Arena</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -77,10 +81,65 @@
                         </ul>
                     </div>
                     <a href="blogs-resources.html" class="btn blog-btn ms-lg-3 mt-2 mt-lg-0">Blog or Resources</a>
+
                 </div>
             </div>
         </nav>
     </header>
+    <!-- End of NAVBAR -->
+
+    <style>
+        /* Remove Bootstrap default underline below dropdown toggles */
+        .navbar-nav .nav-link {
+            color: #2e7d32;
+            font-weight: 500;
+            position: relative;
+            text-decoration: none !important;
+        }
+
+        /* Subtle green underline on hover (except active) */
+        .navbar-nav .nav-link:not(.active)::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #2e7d32;
+            transition: width 0.3s;
+            margin: auto;
+        }
+
+        .navbar-nav .nav-link:not(.active):hover::after {
+            width: 100%;
+        }
+
+        /* Highlight active nav-link or dropdown-toggle */
+        .navbar-nav .nav-link.active,
+        .navbar-nav .nav-link.dropdown-toggle.active {
+            background-color: #2e7d32;
+            color: white !important;
+            border-radius: 0.3rem;
+            padding-left: 0.6rem;
+            padding-right: 0.6rem;
+        }
+
+        /* Add underline animation on hover even for active link */
+        .navbar-nav .nav-link.active::after,
+        .navbar-nav .nav-link.dropdown-toggle.active::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 2px;
+            background: white;
+            /* white underline when active */
+            transition: width 0.3s;
+            margin: auto;
+        }
+
+        .navbar-nav .nav-link.active:hover::after,
+        .navbar-nav .nav-link.dropdown-toggle.active:hover::after {
+            width: 100%;
+        }
+    </style>
     <!-- End of NAVBAR -->
 
     <!-- MID SECTION FOR MOBILE ARENA -->
@@ -113,7 +172,6 @@
                         <li>Sunday–Monday: 10 AM – 8:45 PM</li>
                         <li>Tuesday: <span style="color: red;">Closed</span></li>
                         <li>Wednesday–Saturday: 10 AM – 8:45 PM</li>
-                        <li>Open on Raksha Bandhan</li>
                     </ul>
                 </div>
             </div>

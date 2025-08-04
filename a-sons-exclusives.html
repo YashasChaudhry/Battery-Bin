@@ -13,11 +13,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>A Sons Exclusives | Battery Bin</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" class="css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="LogoTop.png" type="image/png">
+    <style>
+        .highlight-box {
+            background-color: #f1f8e9;
+            border-left: 5px solid #2e7d32;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        .why-matters {
+            background: linear-gradient(to right, #e8f5e9, #f1f8e9);
+            padding: 20px;
+            border-left: 4px solid #2e7d32;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+    </style>
 </head>
 
 <body class="our-network-page">
@@ -65,12 +81,14 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="our-network.html#step-by-step-school">Step By
-                                            Step School, Noida</a></li>
-                                    <li><a class="dropdown-item" href="our-network.html#ch-chhbil-dass">Ch. Chhabil Dass
+                                            Step
+                                            School, Noida</a></li>
+                                    <li><a class="dropdown-item" href="our-network.html#ch-chhbil-dass">Ch.Chhabil Dass
                                             Public School, Ghaziabad</a></li>
                                     <li><a class="dropdown-item active" href="our-network.html#a-sons-exclusives">A Sons
                                             Exclusives</a></li>
-                                    <li><a class="dropdown-item" href="our-network.html#mobile-arena">Mobile Arena</a>
+                                    <li><a class="dropdown-item " href="our-network.html#mobile-arena">Mobile
+                                            Arena</a>
                                     </li>
                                 </ul>
                             </li>
@@ -80,10 +98,65 @@
                         </ul>
                     </div>
                     <a href="blogs-resources.html" class="btn blog-btn ms-lg-3 mt-2 mt-lg-0">Blog or Resources</a>
+
                 </div>
             </div>
         </nav>
     </header>
+    <!-- End of NAVBAR -->
+
+    <style>
+        /* Remove Bootstrap default underline below dropdown toggles */
+        .navbar-nav .nav-link {
+            color: #2e7d32;
+            font-weight: 500;
+            position: relative;
+            text-decoration: none !important;
+        }
+
+        /* Subtle green underline on hover (except active) */
+        .navbar-nav .nav-link:not(.active)::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #2e7d32;
+            transition: width 0.3s;
+            margin: auto;
+        }
+
+        .navbar-nav .nav-link:not(.active):hover::after {
+            width: 100%;
+        }
+
+        /* Highlight active nav-link or dropdown-toggle */
+        .navbar-nav .nav-link.active,
+        .navbar-nav .nav-link.dropdown-toggle.active {
+            background-color: #2e7d32;
+            color: white !important;
+            border-radius: 0.3rem;
+            padding-left: 0.6rem;
+            padding-right: 0.6rem;
+        }
+
+        /* Add underline animation on hover even for active link */
+        .navbar-nav .nav-link.active::after,
+        .navbar-nav .nav-link.dropdown-toggle.active::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 2px;
+            background: white;
+            /* white underline when active */
+            transition: width 0.3s;
+            margin: auto;
+        }
+
+        .navbar-nav .nav-link.active:hover::after,
+        .navbar-nav .nav-link.dropdown-toggle.active:hover::after {
+            width: 100%;
+        }
+    </style>
     <!-- End of NAVBAR -->
 
     <!-- Start of MID SECTION -->
@@ -96,7 +169,9 @@
                 style="max-height: 400px;">
         </div>
 
-        <div class="px-3 px-md-5">
+
+
+        <div class="px-3 px-md-5 highlight-box">
             <h3 style="color: #2e7d32;">About the Shop</h3>
             <p>
                 A Sons Exclusives is a premium watch store in Ghaziabad, established in 2014. Known for their wide
@@ -108,65 +183,107 @@
                 Our bin is placed on one of their counters along with an awareness poster, making it easy for customers
                 and locals to participate in safe battery recycling.
             </p>
+            <h4 class="mt-4" style="color: #2e7d32;">🌟 What Makes Us Unique</h4>
+            <ul class="text-muted">
+                <li>Wide collection of premium and designer watches</li>
+                <li>Trusted by customers in Ghaziabad since 2014</li>
+                <li>Friendly service and expert product guidance</li>
+                <li>Environmentally responsible: part of the Battery Bin network</li>
+            </ul>
+        </div>
 
-            <h3 style="color: #2e7d32;">Location</h3>
+        <div class="highlight-box">
+            <h4 style="color: #2e7d32;">♻️ Sustainability in Action</h4>
             <p>
-                Shop Number B-13, Near Holy Child School,<br>
-                Bhagat Singh Marg, Ashok Nagar, Ghaziabad – 201001
+                A Sons Exclusives proudly supports responsible battery disposal. By hosting a Battery Bin on-site,
+                we make it easy for our customers to return used watch batteries and prevent toxic waste from
+                entering landfills.
             </p>
-
-            <h3 style="color: #2e7d32;">Working Hours</h3>
-            <table class="table table-bordered w-100 mb-4" style="max-width: 450px;">
-                <tbody>
-                    <tr>
-                        <td><strong>Sunday (Today)</strong></td>
-                        <td>11:00 AM – 9:00 PM</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Monday</strong></td>
-                        <td>11:00 AM – 9:00 PM</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Tuesday</strong></td>
-                        <td><span style="color: red;">Closed</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Wednesday</strong></td>
-                        <td>11:00 AM – 9:00 PM</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Thursday</strong></td>
-                        <td>11:00 AM – 9:00 PM</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Friday</strong></td>
-                        <td>11:00 AM – 9:00 PM</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Saturday (9th Aug)</strong></td>
-                        <td>11:00 AM – 9:00 PM</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3 style="color: #2e7d32;">Contact Information</h3>
             <p>
-                📞 <a href="tel:07947422099" style="color:#2e7d32; text-decoration: none;">07947 422099</a>,
-                <a href="tel:09717989108" style="color:#2e7d32; text-decoration: none;">097179 89108</a><br>
-                📅 <strong>Established:</strong> 2014<br>
-                📷 <strong>Instagram:</strong>
-                <a href="https://www.instagram.com/a.sonsexclusives_a.s.asociates/" target="_blank"
-                    style="color:#2e7d32; text-decoration: underline;">
-                    @a.sonsexclusives_a.s.asociates
-                </a>
+                Every small action counts — and together, we’re creating a cleaner, greener Ghaziabad.
             </p>
+        </div>
 
-            <div class="text-center mt-5">
-                <img src="A Sons Exclusives - Bin Pic.jpg" class="img-fluid rounded shadow-sm mb-2"
-                    alt="Battery Bin placed at A Sons Exclusives" style="max-height: 450px;">
-                <p class="text-muted" style="font-size: 0.95em;">Battery Bin placed on the counter at A Sons Exclusives
-                </p>
+        <div class="highlight-box">
+            <h4 style="color: #2e7d32;">🗣️ What Our Customers Say</h4>
+            <div class="blockquote text-muted">
+                “I found the perfect gift watch here — and learned about battery recycling at the same time!”
             </div>
+            <div class="blockquote text-muted">
+                “Great collection, great staff, and I love their green initiative!”
+            </div>
+        </div>
+
+        <div class="highlight-box">
+            <h4 style="color: #2e7d32;">🔍 Did You Know?</h4>
+            <p class="text-muted mb-0">
+                A Sons Exclusives has recycled over 200 used watch batteries since joining the Battery Bin
+                initiative!
+            </p>
+        </div>
+
+        <div class="text-center mt-5">
+            <img src="A Sons Exclusives - Bin Pic.jpg" class="img-fluid rounded shadow-sm mb-2"
+                alt="Battery Bin placed at A Sons Exclusives" style="max-height: 450px;">
+            <p class="text-muted" style="font-size: 0.95em;">Battery Bin placed on the counter at A Sons Exclusives</p>
+        </div>
+
+        <section class="row text-center mt-4">
+            <div class="col-md-4 mb-4">
+                <div class="p-4 rounded shadow-sm bg-white h-100 scale-hover" style="border: 1px solid #cfd8dc;">
+                    <h4 style="color: #2e7d32;">📍 Address</h4>
+                    <p class="text-muted">
+                        Shop Number B-13, Near Holy Child School,<br>
+                        Bhagat Singh Marg, Ashok Nagar,<br>
+                        Ghaziabad – 201001
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="p-4 rounded shadow-sm bg-white h-100 scale-hover" style="border: 1px solid #cfd8dc;">
+                    <h4 style="color: #2e7d32;">📞 Contact</h4>
+                    <p class="text-muted mb-2">
+                        <a href="tel:07947422099" style="color: #2e7d32; text-decoration: none;">07947 422099</a><br>
+                        <a href="tel:09717989108" style="color: #2e7d32; text-decoration: none;">097179 89108</a>
+                    </p>
+                    <p class="text-muted">📷
+                        <a href="https://www.instagram.com/a.sonsexclusives_a.s.asociates/" target="_blank"
+                            style="color: #2e7d32; text-decoration: underline;">
+                            @a.sonsexclusives_a.s.asociates
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="p-4 rounded shadow-sm bg-white h-100 scale-hover" style="border: 1px solid #cfd8dc;">
+                    <h4 style="color: #2e7d32;">🕒 Timings</h4>
+                    <ul class="list-unstyled text-muted mb-0">
+                        <li>Sunday–Monday: 11:00 AM – 9:00 PM</li>
+                        <li>Tuesday: <span style="color: red;">Closed</span></li>
+                        <li>Wednesday–Saturday: 11:00 AM – 9:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center mt-1">
+            <p class="text-muted mb-0">📅 <strong>Established:</strong> 2014</p>
+        </div>
+
+        <div class="text-center mt-5">
+            <h4 style="color: #2e7d32;">🏆 Battery Recycling Recognition</h4>
+            <p class="text-muted">Recognized for contributing to safe and responsible battery disposal.</p>
+            <img src="A Sons Exclusives Certificate.jpg" class="img-fluid rounded shadow-sm"
+                alt="Recognition Certificate" style="max-height: 500px; border: 1px solid #cfd8dc;">
+        </div>
+
+        <div class="why-matters mt-5 px-3 px-md-5">
+            <h4 style="color: #2e7d32;">♻️ Why This Matters</h4>
+            <p>
+                Watch batteries may seem small, but when improperly disposed of, they can leak harmful chemicals into
+                our environment. By participating in battery recycling, A Sons Exclusives sets an example for
+                responsible retail and helps protect our planet.
+            </p>
         </div>
     </main>
     <!-- End of MID SECTION -->
@@ -202,7 +319,6 @@
     <!-- End of FOOTER -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 </body>
 
