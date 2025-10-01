@@ -261,15 +261,45 @@ footer {
 
 .ribbon {
     position: absolute;
-    top: 12px;
-    right: -20px;
-    transform: rotate(45deg);
-    background: #2e7d32;
-    /* Green */
-    color: white;
-    font-weight: bold;
-    padding: 5px 35px;
-    font-size: 0.75rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    top: 10px;
+    right: -30px;
+    /* some part outside */
     z-index: 1;
+    overflow: visible;
+    /* text won't be clipped */
+    font-weight: bold;
+    font-size: 0.75rem;
+    color: white;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.corner-ribbon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.corner-ribbon-text {
+    position: absolute;
+    top: 38px;
+    right: -50px;
+    width: 250px;
+    background: #2e7d32;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.75rem;
+    padding: 8px 0;
+    transform: rotate(45deg);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.5px;
 }
