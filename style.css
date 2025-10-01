@@ -272,11 +272,6 @@ footer {
     color: white;
 }
 
-.card {
-    position: relative;
-    overflow: hidden;
-}
-
 .corner-ribbon {
     position: absolute;
     top: 0;
