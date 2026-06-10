@@ -8,7 +8,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-PVNP1D4VKR');
     </script>
     <meta charset="utf-8">
@@ -16,49 +15,117 @@
     <title>Our Network | Battery Bin</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" class="css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="LogoTop.png" type="image/png">
+
+    <style>
+        /* ── NautiClean feature card ── */
+        .nauticlean-feature-card {
+            background: linear-gradient(135deg, #e8f7f0 0%, #d0f0e4 100%);
+            border: 1.5px solid #5DCAA5;
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+        }
+        .nauticlean-feature-card::before {
+            content: '';
+            position: absolute;
+            top: -40px;
+            right: -40px;
+            width: 160px;
+            height: 160px;
+            background: radial-gradient(circle, rgba(29,158,117,0.12) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .nauticlean-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            background: #1D9E75;
+            color: #fff;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+        .nauticlean-tech-pill {
+            display: inline-block;
+            background: rgba(255,255,255,0.7);
+            color: #0F6E56;
+            border: 1px solid #5DCAA5;
+            font-size: 11px;
+            font-weight: 500;
+            padding: 3px 10px;
+            border-radius: 20px;
+            margin: 3px 3px 0 0;
+        }
+        .nauticlean-flow-box {
+            background: rgba(255,255,255,0.75);
+            border: 1px solid #9FE1CB;
+            border-radius: 10px;
+            padding: 10px 14px;
+            font-size: 13px;
+            color: #085041;
+            text-align: center;
+            flex: 1;
+        }
+        .nauticlean-flow-arrow {
+            color: #1D9E75;
+            font-size: 18px;
+            font-weight: 700;
+            align-self: center;
+            padding: 0 4px;
+        }
+        .type-initiative {
+            background-color: #e1f5ee !important;
+            color: #0f6e56 !important;
+        }
+        .wave-divider {
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            margin: 0 0 -4px;
+        }
+        .wave-divider svg {
+            display: block;
+            width: 100%;
+        }
+    </style>
 </head>
 
-<body class="our-network-page">
-    <!-- Start of NAVBAR -->
+<body>
+
+    <!-- ── NAVBAR ── -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
             <div class="container">
+
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
                     <img src="logo.png" alt="Battery Bin Logo" class="rounded-circle me-2" style="height: 45px;">
-                    <span class="navbar-brand">Battery Bin</span>
-                    <style>
-                        .navbar-brand {
-                            font-family: 'Segoe UI', 'Helvetica Neue', 'Roboto', 'Arial', sans-serif;
-                            font-weight: 600;
-                            font-size: 1.5rem;
-                            color: #2e7d32;
-                            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-                            transition: color 0.3s;
-                            cursor: pointer;
-                        }
-
-                        .navbar-brand:hover {
-                            color: #27632a;
-                            /* subtle darker shade */
-                        }
-                    </style>
+                    Battery Bin
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <div class="mx-auto">
                         <ul class="navbar-nav mb-2 mb-lg-0">
+
                             <li class="nav-item">
                                 <a class="nav-link" href="index.html">Home</a>
                             </li>
+
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     About Us
                                 </a>
                                 <ul class="dropdown-menu">
@@ -67,178 +134,518 @@
                                     <li><a class="dropdown-item" href="about-us.html#our-impact">Our Impact</a></li>
                                 </ul>
                             </li>
+
                             <li class="nav-item">
                                 <a class="nav-link" href="how-it-works.html">How It Works</a>
                             </li>
+
                             <li class="nav-item">
                                 <a class="nav-link" href="updates.html">Updates</a>
                             </li>
+
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle active" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle active" href="our-network.html"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Our Network
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="our-network.html#step-by-step-school">Step By
-                                            Step
-                                            School, Noida</a></li>
-                                    <li><a class="dropdown-item" href="our-network.html#ch-chhbil-dass">Ch.Chhabil Dass
-                                            Public School, Ghaziabad</a></li>
-                                    <li><a class="dropdown-item" href="our-network.html#vips-delhi">VIPS, Delhi
-                                            </a></li>
-                                    <li><a class="dropdown-item" href="our-network.html#a-sons-exclusives">A.Sons Exclusives, Ghaziabad</a>
-                                    </li>
+                                    <li><a class="dropdown-item" href="our-network.html#delhi">📍 Delhi</a></li>
+                                    <li><a class="dropdown-item" href="our-network.html#ghaziabad">📍 Ghaziabad</a></li>
+                                    <li><a class="dropdown-item" href="our-network.html#noida">📍 Noida</a></li>
+                                    <li><a class="dropdown-item" href="our-network.html#greater-noida">📍 Greater Noida</a></li>
+                                    <li><a class="dropdown-item" href="our-network.html#gurgaon">📍 Gurgaon</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="our-network.html#initiatives">🌊 Initiatives</a></li>
                                 </ul>
                             </li>
+
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contact</a>
                             </li>
+
                         </ul>
                     </div>
-                    <a href="blogs-resources.html" class="btn blog-btn ms-lg-3 mt-2 mt-lg-0">Blogs &
-                        Resources</a>
+                    <a href="blogs-resources.html" class="btn blog-btn ms-lg-3 mt-2 mt-lg-0">
+                        Blogs &amp; Resources
+                    </a>
                 </div>
+
             </div>
         </nav>
     </header>
-    <!-- End of NAVBAR -->
+    <!-- ── END NAVBAR ── -->
 
-    <style>
-        /* Remove Bootstrap default underline below dropdown toggles */
-        .navbar-nav .nav-link {
-            color: #2e7d32;
-            font-weight: 500;
-            position: relative;
-            text-decoration: none !important;
-        }
+    <!-- ── Hero ── -->
+    <div class="page-hero" style="margin-top: 66px;">
+        <h1>Our Network</h1>
+        <p>Schools, colleges, NGOs, and local partners across Delhi NCR — united by one mission: keeping batteries out of our soil and water.</p>
+    </div>
 
-        /* Subtle green underline on hover (except active) */
-        .navbar-nav .nav-link:not(.active)::after {
-            content: "";
-            display: block;
-            width: 0;
-            height: 2px;
-            background: #2e7d32;
-            transition: width 0.3s;
-            margin: auto;
-        }
+    <main class="container pb-5">
 
-        .navbar-nav .nav-link:not(.active):hover::after {
-            width: 100%;
-        }
+        <!-- Stats strip -->
+        <div class="stats-strip">
+            <div class="stat-pill">
+                <div class="num">22</div>
+                <div class="lbl">Partners</div>
+            </div>
+            <div class="stat-pill">
+                <div class="num">5</div>
+                <div class="lbl">Cities</div>
+            </div>
+            <div class="stat-pill">
+                <div class="num">75,000+</div>
+                <div class="lbl">Students & community members</div>
+            </div>
+            <div class="stat-pill">
+                <div class="num">∞</div>
+                <div class="lbl">Batteries out of landfills</div>
+            </div>
+        </div>
 
-        /* Highlight active nav-link or dropdown-toggle */
-        .navbar-nav .nav-link.active,
-        .navbar-nav .nav-link.dropdown-toggle.active {
-            background-color: #2e7d32;
-            color: white !important;
-            border-radius: 0.3rem;
-            padding-left: 0.6rem;
-            padding-right: 0.6rem;
-        }
+        <!-- ════════ DELHI ════════ -->
+        <div class="city-section" id="delhi">
+            <div class="city-heading">
+                <h2>Delhi</h2>
+                <span class="city-badge">3 partners</span>
+                <div class="city-heading-line"></div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 
-        /* Add underline animation on hover even for active link */
-        .navbar-nav .nav-link.active::after,
-        .navbar-nav .nav-link.dropdown-toggle.active::after {
-            content: "";
-            display: block;
-            width: 0;
-            height: 2px;
-            background: white;
-            /* white underline when active */
-            transition: width 0.3s;
-            margin: auto;
-        }
+                <div class="col" id="nc-jindal">
+                    <div class="partner-card">
+                        <div class="card-img-wrap">
+                            <img src="Our Network/nc-jindal.jpg" alt="N.C. Jindal Public School">
+                            <span class="card-type-overlay type-school">🏫 School</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">N.C. Jindal Public School</h5>
+                            <p class="card-location">Punjabi Bagh, New Delhi</p>
+                            <a href="Our Network/nc-jindal.html" class="btn-view">View Details →</a>
+                        </div>
+                    </div>
+                </div>
 
-        .navbar-nav .nav-link.active:hover::after,
-        .navbar-nav .nav-link.dropdown-toggle.active:hover::after {
-            width: 100%;
-        }
-    </style>
+                <div class="col" id="vips-delhi">
+                    <div class="partner-card">
+                        <div class="card-img-wrap">
+                            <img src="Our Network/VIPS-Delhi.jpg" alt="VIPS Delhi">
+                            <span class="card-type-overlay type-college">🎓 College</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">VIPS</h5>
+                            <p class="card-location">Pitampura, Delhi</p>
+                            <span class="btn-soon">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- Start of MID-SECTION -->
+                <div class="col" id="roboclub-delhi">
+                    <div class="partner-card">
+                        <div class="card-img-wrap">
+                            <img src="Our Network/robo club.jpg" alt="RoboClub Delhi">
+                            <span class="card-type-overlay type-club">🤖 Club</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">RoboClub</h5>
+                            <p class="card-location">Delhi</p>
+                            <span class="btn-soon">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
 
-    <main class="container py-3" style="margin-top: 80px;">
-        <h1 class="text-center mb-4" style="color: #c46828;">Our Network</h1>
-        <p class="text-center mb-5">
-            Explore the schools, shops, and local partners helping us collect and safely recycle used batteries.
-        </p>
+            </div>
+        </div>
 
-        <!-- First scroll target outside row -->
-        <div id="step-by-step-school" class="scroll-offset"></div>
-        <div class="row row-cols-1 g-5 mb-5">
-            <div class="col ">
-                <div class="card shadow-sm scale-hover">
-                    <img src="Our Network/Step By Step School.jpg" class="card-img-top natural-img" alt="">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Step By Step School, Noida</h5>
-                        <p class="card-text">Noida, Uttar Pradesh</p>
-                        <a href="Our Network/step-by-step.html" class="btn btn-outline-success">View Details</a>
+        <hr class="city-divider">
 
+        <!-- ════════ GHAZIABAD ════════ -->
+        <div class="city-section" id="ghaziabad">
+            <div class="city-heading">
+                <h2>Ghaziabad</h2>
+                <span class="city-badge">13 partners</span>
+                <div class="city-heading-line"></div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+                <div class="col" id="ch-chhabil-dass-patel-nagar">
+                    <div class="partner-card">
+                        <div class="card-img-wrap">
+                            <img src="Our Network/Ch Chhabil Dass School.jpg" alt="Ch. Chhabil Dass Public School Patel Nagar">
+                            <span class="card-type-overlay type-school">🏫 School</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Ch. Chhabil Dass Public School</h5>
+                            <p class="card-location">Patel Nagar, Ghaziabad</p>
+                            <a href="Our Network/Ch-Chhabil-Dass-School.html" class="btn-view">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col" id="its-college">
+                    <div class="partner-card">
+                        <div class="card-img-wrap">
+                            <img src="Our Network/ITS - Technology and Science.jpg" alt="ITS Institute of Technology & Science">
+                            <span class="card-type-overlay type-college">🎓 College</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">I.T.S Institute of Technology &amp; Science</h5>
+                            <p class="card-location">Mohan Nagar, Ghaziabad</p>
+                            <span class="btn-soon">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" id="rise">
+                    <div class="partner-card">
+                        <div class="card-img-wrap">
+                            <img src="Our Network/rise organic homes.jpg" alt="Rise Organic Homes">
+                            <span class="card-type-overlay type-club">🏘️ Residential Society</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Rise Organic Homes</h5>
+                            <p class="card-location">Ghaziabad</p>
+                            <span class="btn-soon">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col" id="udaan">
+                    <div class="partner-card">
+                        <div class="card-img-wrap">
+                            <img src="Our Network/udaan-ngo.jpeg" alt="Udaan NGO School">
+                            <span class="card-type-overlay type-ngo">🌱 NGO</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Udaan</h5>
+                            <p class="card-location">Ghaziabad</p>
+                            <a href="Our Network/udaan-ngo.html" class="btn-view">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col" id="kiet">
+    <div class="partner-card">
+        <div class="card-img-wrap">
+            <img src="Our Network/kiet.webp" alt="KIET Group of Institutions">
+            <span class="card-type-overlay type-college">🎓 College</span>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">KIET Group of Institutions</h5>
+            <p class="card-location">Murad Nagar, Ghaziabad</p>
+            <span class="btn-soon">Coming Soon</span>
+        </div>
+    </div>
+</div>
+                <div class="col" id="golf-links">
+                    <div class="partner-card">
+                        <div class="card-img-wrap">
+                            <img src="Our Network/golf-links.jpg.avif" alt="Golf Links Club Ghaziabad">
+                            <span class="card-type-overlay type-club">⛳ Club</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Golf Links Club</h5>
+                            <p class="card-location">Ghaziabad</p>
+                            <a href="Our Network/golf-links-club.html" class="btn-view">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" id="ch-chhabil-dass-wave-city">
+                    <div class="partner-card">
+                        <div class="card-img-wrap">
+                            <img src="Our Network/chaudhry chhabil dass public school - wave city.jpg" alt="Ch. Chhabil Dass Public School Wave City">
+                            <span class="card-type-overlay type-school">🏫 School</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Ch. Chhabil Dass Public School</h5>
+                            <p class="card-location">Wave City, Ghaziabad</p>
+                            <span class="btn-soon">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" id="maharishi-vidya-mandir">
+    <div class="partner-card">
+        <div class="card-img-wrap">
+            <img src="Our Network/Maharishi Vidya Mandir.jpg" alt="Maharishi Vidya Mandir">
+            <span class="card-type-overlay type-school">🏫 School</span>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Maharishi Vidya Mandir</h5>
+            <p class="card-location">Modi Nagar, Ghaziabad</p>
+            <span class="btn-soon">Coming Soon</span>
+        </div>
+    </div>
+</div>
+
+
+                                <div class="col" id="a-sons-exclusives">
+                    <div class="partner-card">
+                        <div class="card-img-wrap">
+                            <img src="Our Network/A Sons Exclusives.jpg" alt="A.Sons Exclusives">
+                            <span class="card-type-overlay type-shop">🛍️ Shop</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">A.Sons Exclusives</h5>
+                            <p class="card-location">Ghaziabad, Uttar Pradesh</p>
+                            <a href="Our Network/a-sons-exclusives.html" class="btn-view">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" id="gharunda">
+                    <div class="partner-card">
+                        <div class="card-img-wrap">
+                            <img src="Our Network/Gharunda NGO.jpg" alt="Gharunda NGO">
+                            <span class="card-type-overlay type-ngo">🌱 NGO</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Gharunda</h5>
+                            <p class="card-location">Ghaziabad</p>
+                            <span class="btn-soon">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col" id="skardi">
+                    <div class="partner-card">
+                        <div class="card-img-wrap">
+                            <img src="Our Network/skardi.png" alt="Skardi Club Ghaziabad">
+                            <span class="card-type-overlay type-club">⛳ Club</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Skardi Club</h5>
+                            <p class="card-location">Ghaziabad</p>
+                            <a href="Our Network/skardi-club.html" class="btn-view">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col" id="ashiana">
+                    <div class="partner-card">
+                        <div class="card-img-wrap">
+                            <img src="Our Network/ashiana-le-residency.jpg" alt="Ashiana, Le Residency">
+                            <span class="card-type-overlay type-club">🏘️ Residential Society</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Ashiana, Le Residency</h5>
+                            <p class="card-location">Ghaziabad</p>
+                            <a href="Our Network/ashiana-le-residency.html" class="btn-view">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col" id="its-ug">
+                    <div class="partner-card">
+                        <div class="card-img-wrap">
+                            <img src="Our Network/its-ug-mohan-nagar.jpg" alt="ITS UG Institute">
+                            <span class="card-type-overlay type-college">🎓 College</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">I.T.S UG Institute</h5>
+                            <p class="card-location">Mohan Nagar, Ghaziabad</p>
+                            <span class="btn-soon">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <hr class="city-divider">
+
+        <!-- ════════ NOIDA ════════ -->
+        <div class="city-section" id="noida">
+            <div class="city-heading">
+                <h2>Noida</h2>
+                <span class="city-badge">1 partners</span>
+                <div class="city-heading-line"></div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+                <div class="col" id="step-by-step-school">
+                    <div class="partner-card">
+                        <div class="card-img-wrap">
+                            <img src="Our Network/Step By Step School.jpg" alt="Step By Step School">
+                            <span class="card-type-overlay type-school">🏫 School</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Step By Step School</h5>
+                            <p class="card-location">Noida, Uttar Pradesh</p>
+                            <a href="Our Network/step-by-step.html" class="btn-view">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <hr class="city-divider">
+
+        <!-- ════════ GREATER NOIDA ════════ -->
+        <div class="city-section" id="greater-noida">
+            <div class="city-heading">
+                <h2>Greater Noida</h2>
+                <span class="city-badge">1 partner</span>
+                <div class="city-heading-line"></div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+                <div class="col" id="its-dental">
+                    <div class="partner-card">
+                        <div class="card-img-wrap">
+                            <img src="Our Network/its-greater-noida.jpg" alt="ITS Dental College Hospital & Research Centre">
+                            <span class="card-type-overlay type-college">🦷 College</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">I.T.S Dental College Hospital &amp; Research Centre</h5>
+                            <p class="card-location">Greater Noida, Uttar Pradesh</p>
+                            <span class="btn-soon">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <hr class="city-divider">
+
+        <!-- ════════ GURGAON ════════ -->
+        <div class="city-section" id="gurgaon">
+            <div class="city-heading">
+                <h2>Gurgaon</h2>
+                <span class="city-badge">2 partners</span>
+                <div class="city-heading-line"></div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+                <div class="col" id="melaunge">
+                    <div class="partner-card">
+                        <div class="card-img-wrap">
+                            <img src="Our Network/melaunge by vasavi.png" alt="Melaunge By Vasavi">
+                            <span class="card-type-overlay type-bakery">🍞 Bakery</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Melaunge By Vasavi</h5>
+                            <p class="card-location">Gurgaon, Haryana</p>
+                            <span class="btn-soon">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col" id="quantanova">
+                    <div class="partner-card">
+                        <div class="card-img-wrap">
+                            <img src="Our Network/quantanova.webp" alt="Quantanova Technologies">
+                            <span class="card-type-overlay type-tech">💻 Tech</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Quantanova Technologies</h5>
+                            <p class="card-location">Gurgaon, Haryana</p>
+                            <span class="btn-soon">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <hr class="city-divider">
+
+        <!-- ════════ INITIATIVES & COLLABORATIONS ════════ -->
+        <div class="city-section" id="initiatives">
+            <div class="city-heading">
+                <h2>Initiatives &amp; Collaborations</h2>
+                <span class="city-badge">2 partners</span>
+                <div class="city-heading-line"></div>
+            </div>
+
+            <!-- NautiClean feature card -->
+            <div class="nauticlean-feature-card p-3 p-md-4 mb-4">
+                <div class="row align-items-center g-3">
+                    <div class="col-lg-8">
+                        <div style="display:flex; align-items:center; gap:10px; margin-bottom:6px;">
+                            <span class="nauticlean-badge" style="margin-bottom:0;">🌊 Initiative</span>
+                            <h3 style="font-size: 1.2rem; font-weight: 700; color: #085041; margin: 0;">NautiClean</h3>
+                            <span style="font-size: 0.82rem; color: #0F6E56;">Delhi NCR &nbsp;·&nbsp; Active Collaboration</span>
+                        </div>
+                        <p style="color: #085041; font-size: 0.9rem; line-height: 1.6; margin-bottom: 10px;">
+                            An autonomous marine trash collector using GPS navigation, Arduino + Raspberry Pi controls, and Particle Swarm Optimisation for path efficiency. Batteries recovered from polluted water bodies are channelled directly into Battery Bin's recycling network.
+                        </p>
+                        <div>
+                            <span class="nauticlean-tech-pill">🛰️ GPS Navigation</span>
+                            <span class="nauticlean-tech-pill">🤖 Arduino + Raspberry Pi</span>
+                            <span class="nauticlean-tech-pill">⚙️ Particle Swarm Optimisation</span>
+                            <span class="nauticlean-tech-pill">🔄 Conveyor Collection</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div style="display: flex; align-items: stretch; gap: 4px;">
+                            <div class="nauticlean-flow-box">🌊<br><strong>Water body</strong></div>
+                            <div class="nauticlean-flow-arrow">→</div>
+                            <div class="nauticlean-flow-box">🤖<br><strong>NautiClean</strong></div>
+                            <div class="nauticlean-flow-arrow">→</div>
+                            <div class="nauticlean-flow-box">♻️<br><strong>Battery Bin</strong></div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="divider"></div>
-
-            <!-- Offset target for second card inside row -->
-            <div id="ch-chhbil-dass" class="scroll-offset"></div>
-            <div class="row row-cols-1 g-5"></div>
-            <div class="col">
-                <div class="card shadow-sm scale-hover">
-                    <img src="Our Network/Ch Chhabil Dass School.jpg" class="card-img-top natural-img"
-                        alt="Ch. Chhabil Dass Public School">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Ch. Chhabil Dass Public School</h5>
-                        <p class="card-text">Ghaziabad, Uttar Pradesh</p>
-                        <a href="#" class="btn btn-outline-secondary disabled" tabindex="-1" aria-disabled="true">Coming
-                            Soon</a>
+            <!-- Govt. Waste Pickup Truck -->
+            <div style="
+                background: linear-gradient(135deg, #f5f2eb 0%, #ede8dc 100%);
+                border: 1.5px solid #888780;
+                border-radius: 16px;
+                overflow: hidden;
+                position: relative;
+                padding: 1rem 1.25rem;
+            " class="mb-4">
+                <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:8px;">
+                    <span style="display:inline-flex; align-items:center; background:#5F5E5A; color:#F1EFE8; font-size:11px; font-weight:600; letter-spacing:0.05em; padding:4px 12px; border-radius:20px;">🏛️ Municipal Initiative</span>
+                    <span style="font-size:1.1rem; font-weight:700; color:#2C2C2A;">Govt. Waste Pickup Truck</span>
+                    <span style="font-size:0.82rem; color:#5F5E5A;">Ghaziabad &nbsp;·&nbsp; Active Collaboration</span>
+                </div>
+                <div style="display:flex; gap:1.5rem; flex-wrap:wrap; align-items:flex-start;">
+                    <div style="flex:1; min-width:220px;">
+                        <p style="color:#2C2C2A; font-size:0.88rem; line-height:1.6; margin-bottom:10px;">
+                            The municipal waste collection truck serving Ghaziabad now carries a Battery Bin awareness poster — reaching hundreds of households on every route. Batteries segregated during wet/dry/hazardous sorting are handed to Battery Bin for formal recycling instead of being sold to informal recyclers.
+                        </p>
+                        <div>
+                            <span style="display:inline-block; background:rgba(255,255,255,0.65); color:#444441; border:1px solid #B4B2A9; font-size:11px; font-weight:500; padding:3px 10px; border-radius:20px; margin:3px 3px 0 0;">Wet / Dry segregation</span>
+                            <span style="display:inline-block; background:rgba(255,255,255,0.65); color:#444441; border:1px solid #B4B2A9; font-size:11px; font-weight:500; padding:3px 10px; border-radius:20px; margin:3px 3px 0 0;">Hazardous waste sorting</span>
+                            <span style="display:inline-block; background:rgba(255,255,255,0.65); color:#444441; border:1px solid #B4B2A9; font-size:11px; font-weight:500; padding:3px 10px; border-radius:20px; margin:3px 3px 0 0;">Awareness poster on truck</span>
+                            <span style="display:inline-block; background:rgba(255,255,255,0.65); color:#444441; border:1px solid #B4B2A9; font-size:11px; font-weight:500; padding:3px 10px; border-radius:20px; margin:3px 3px 0 0;">Formal recycling channel</span>
+                        </div>
+                    </div>
+                    <div style="min-width:200px; flex:0 0 auto; align-self:center;">
+                        <div style="display:flex; align-items:stretch; gap:4px;">
+                            <div style="background:rgba(255,255,255,0.7); border:1px solid #D3D1C7; border-radius:10px; padding:10px; font-size:12px; color:#2C2C2A; text-align:center; flex:1;">Household<br><strong>Collection</strong></div>
+                            <div style="color:#5F5E5A; font-size:18px; font-weight:700; align-self:center; padding:0 2px;">→</div>
+                            <div style="background:rgba(255,255,255,0.7); border:1px solid #D3D1C7; border-radius:10px; padding:10px; font-size:12px; color:#2C2C2A; text-align:center; flex:1;">Battery<br><strong>Segregation</strong></div>
+                            <div style="color:#5F5E5A; font-size:18px; font-weight:700; align-self:center; padding:0 2px;">→</div>
+                            <div style="background:rgba(255,255,255,0.7); border:1px solid #D3D1C7; border-radius:10px; padding:10px; font-size:12px; color:#2C2C2A; text-align:center; flex:1;">♻️<br><strong>Battery Bin</strong></div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="divider"></div>
+        </div>
 
-            <!-- Offset target for third card inside row -->
-            <div id="vips-delhi" class="scroll-offset"></div>
-            <div class="row row-cols-1 g-5 mb"></div>
-            <div class="col">
-                <div class="card shadow-sm scale-hover">
-                    <img src="Our Network/VIPS-Delhi.jpg" class="card-img-top natural-img" alt="VIPS, Delhi">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">VIPS, Delhi</h5>
-                        <p class="card-text">Pitampura, Delhi</p>
-                        <a href="#" class="btn btn-outline-secondary disabled" tabindex="-1" aria-disabled="true">Coming
-                            Soon</a>
-
-                    </div>
-                </div>
+        <!-- ── Join CTA ── -->
+        <div class="join-cta">
+            <div class="type-chips">
+                <span class="chip">🏫 School</span>
+                <span class="chip">🎓 College</span>
+                <span class="chip">🌱 NGO</span>
+                <span class="chip">🛍️ Shop</span>
+                <span class="chip">🏢 Community Space</span>
             </div>
-
-            <div class="divider"></div>
-
-            <!-- Offset target for third card inside row -->
-            <div id="a-sons-exclusives" class="scroll-offset"></div>
-            <div class="row row-cols-1 g-5"></div>
-            <div class="col">
-                <div class="card shadow-sm scale-hover">
-                    <img src="Our Network/A Sons Exclusives.jpg" class="card-img-top natural-img"
-                        alt="A Sons Exclusives">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">A.Sons Exclusives, Ghaziabad</h5>
-                        <p class="card-text">Ghaziabad, Uttar Pradesh</p>
-                        <a href="Our Network/a-sons-exclusives.html" class="btn btn-outline-success">View Details</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="divider"></div>
+            <h4>Want to join the Battery Bin network?</h4>
+            <p>Whether you're a school, college, shop, or community space — if you care about the environment, there's a place for you here.</p>
+            <a href="contact.html" class="btn-cta">Get in Touch →</a>
         </div>
 
     </main>
-    <!-- End of MID-SECTION -->
 
-    <!-- Start of FOOTER -->
+    <!-- ── FOOTER ── -->
     <footer>
         <div class="border-bottom border-top border-3 pb-1">
             <div class="py-3 d-flex justify-content-center flex-wrap">
@@ -266,11 +673,33 @@
             <a href="terms-of-service.html" style="color: #2e7d32; text-decoration: none;">Terms of Service</a>
         </div>
     </footer>
-    <!-- End of FOOTER -->
+    <!-- ── END FOOTER ── -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-</body>
+    <script>
+        document.querySelectorAll('.navbar-nav .dropdown-item').forEach(link => {
+            link.addEventListener('click', () => {
+                const target = link.getAttribute('href');
+                const isSamePageAnchor = target && target.includes('#') &&
+                    (target.startsWith('#') || target.split('#')[0] === window.location.pathname.split('/').pop());
 
+                if (isSamePageAnchor) {
+                    document.querySelectorAll('.navbar-nav .dropdown-menu.show').forEach(menu => {
+                        menu.classList.remove('show');
+                    });
+                    document.querySelectorAll('.navbar-nav .dropdown-toggle.show').forEach(toggle => {
+                        toggle.classList.remove('show');
+                        toggle.setAttribute('aria-expanded', 'false');
+                    });
+
+                    const navbarCollapse = document.getElementById('navbarNav');
+                    const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+                    if (bsCollapse) bsCollapse.hide();
+                }
+            });
+        });
+    </script>
+</body>
 </html>

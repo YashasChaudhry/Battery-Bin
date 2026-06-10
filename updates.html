@@ -8,7 +8,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-PVNP1D4VKR');
     </script>
     <meta charset="utf-8">
@@ -16,35 +15,19 @@
     <title>Updates | Battery Bin</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" class="css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="LogoTop.png" type="image/png">
 </head>
 
 <body>
-    <!-- Start of NAVBAR -->
+    <!-- NAVBAR -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
                     <img src="logo.png" alt="Battery Bin Logo" class="rounded-circle me-2" style="height: 45px;">
-                    <span class="navbar-brand">Battery Bin</span>
-                    <style>
-                        .navbar-brand {
-                            font-family: 'Segoe UI', 'Helvetica Neue', 'Roboto', 'Arial', sans-serif;
-                            font-weight: 600;
-                            font-size: 1.5rem;
-                            color: #2e7d32;
-                            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-                            transition: color 0.3s;
-                            cursor: pointer;
-                        }
-
-                        .navbar-brand:hover {
-                            color: #27632a;
-                            /* subtle darker shade */
-                        }
-                    </style>
+                    Battery Bin
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,9 +41,7 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    About Us
-                                </a>
+                                    aria-expanded="false">About Us</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="about-us.html#our-story">Our Story</a></li>
                                     <li><a class="dropdown-item" href="about-us.html#our-mission">Our Mission</a></li>
@@ -72,23 +53,18 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" href="updates.html">Updates</a>
-
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Our Network
-                                </a>
+                                <a class="nav-link dropdown-toggle" href="our-network.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Our Network</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="our-network.html#step-by-step-school">Step By
-                                            Step
-                                            School, Noida</a></li>
-                                    <li><a class="dropdown-item" href="our-network.html#ch-chhbil-dass">Ch.Chhabil Dass
-                                            Public School, Ghaziabad</a></li>
-                                    <li><a class="dropdown-item" href="our-network.html#vips-delhi">VIPS, Delhi
-                                            </a></li>
-                                    <li><a class="dropdown-item" href="our-network.html#a-sons-exclusives">A.Sons Exclusives, Ghaziabad</a>
-                                    </li>
+                                    <li><a class="dropdown-item" href="our-network.html#delhi">📍 Delhi</a></li>
+                                    <li><a class="dropdown-item" href="our-network.html#ghaziabad">📍 Ghaziabad</a></li>
+                                    <li><a class="dropdown-item" href="our-network.html#noida">📍 Noida</a></li>
+                                    <li><a class="dropdown-item" href="our-network.html#greater-noida">📍 Greater Noida</a></li>
+                                    <li><a class="dropdown-item" href="our-network.html#gurgaon">📍 Gurgaon</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="our-network.html#initiatives">🌊 Initiatives</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -96,118 +72,216 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="blogs-resources.html" class="btn blog-btn ms-lg-3 mt-2 mt-lg-0">Blogs &
-                        Resources</a>
+                    <a href="blogs-resources.html" class="btn blog-btn ms-lg-3 mt-2 mt-lg-0">Blogs &amp; Resources</a>
                 </div>
             </div>
         </nav>
     </header>
-    <!-- End of NAVBAR -->
+    <!-- END NAVBAR -->
 
-    <style>
-        /* Keep same style block for all */
-        .navbar-nav .nav-link {
-            color: #2e7d32;
-            font-weight: 500;
-            position: relative;
-            text-decoration: none !important;
-        }
-
-        .navbar-nav .nav-link:not(.active)::after {
-            content: "";
-            display: block;
-            width: 0;
-            height: 2px;
-            background: #2e7d32;
-            transition: width 0.3s;
-            margin: auto;
-        }
-
-        .navbar-nav .nav-link:not(.active):hover::after {
-            width: 100%;
-        }
-
-        .navbar-nav .nav-link.active,
-        .navbar-nav .nav-link.dropdown-toggle.active {
-            background-color: #2e7d32;
-            color: white !important;
-            border-radius: 0.3rem;
-            padding-left: 0.6rem;
-            padding-right: 0.6rem;
-        }
-
-        /* Add underline animation on hover even for active link */
-        .navbar-nav .nav-link.active::after,
-        .navbar-nav .nav-link.dropdown-toggle.active::after {
-            content: "";
-            display: block;
-            width: 0;
-            height: 2px;
-            background: white;
-            /* white underline when active */
-            transition: width 0.3s;
-            margin: auto;
-        }
-
-        .navbar-nav .nav-link.active:hover::after,
-        .navbar-nav .nav-link.dropdown-toggle.active:hover::after {
-            width: 100%;
-        }
-    </style>
-
-    <!-- Start of MID-SECTION -->
     <main class="container mb-5" style="margin-top: 80px; max-width: 900px; padding-top: 20px;">
         <h1 class="mb-4 text-center" style="color:#2e7d32;">Latest Updates</h1>
-        <p class="text-center mb-5 text-muted">See how our network is growing and making battery recycling easier in the
-            community!</p>
+        <p class="text-center mb-5 text-muted">See how our network is growing and making battery recycling easier in the community!</p>
 
-        <!-- <div class="mb-4 p-4 rounded shadow-sm scale-hover" style="background-color: #ffffff; border: 1px solid #ddd;">
+        <!-- 2026 -->
+        <div class="year-divider">2026</div>
+
+        <!-- May 2026 -->
+        <div class="mb-4 p-4 rounded shadow-sm scale-hover" style="background-color: #ffffff; border: 1px solid #ddd;">
             <h4 class="mb-2" style="color:#2e7d32;">
-                🏫 <a href="Our Network/Ch-Chhabil-Dass-School.html" style="color:#2e7d32; text-decoration:none;">Added
-                    to
-                    our network: Ch. Chhabil Dass Public School, Ghaziabad</a>
+                🏫 <a href="Our Network/Ch-Chhabil-Dass-School-Wave-City.html" style="color:#2e7d32; text-decoration:none;">Added to our network: Ch. Chhabil Dass Public School, Wave City</a>
+            </h4>
+            <p class="text-muted mb-1"><small>Posted in May 2026</small></p>
+            <p>The Wave City branch of Ch. Chhabil Dass Public School joins Battery Bin, giving students, staff, and parents a convenient drop-off point for used batteries right on campus.</p>
+        </div>
+
+        <!-- April 2026 -->
+        <div class="mb-4 p-4 rounded shadow-sm scale-hover" style="background-color: #ffffff; border: 1px solid #ddd;">
+            <h4 class="mb-2" style="color:#2e7d32;">
+                🌊 <a href="our-network.html#initiatives" style="color:#2e7d32; text-decoration:none;">New Initiative: NautiClean × Battery Bin</a>
+            </h4>
+            <p class="text-muted mb-1"><small>Posted in April 2026</small></p>
+            <p>Battery Bin has partnered with NautiClean — an autonomous marine trash collector using GPS navigation, Arduino + Raspberry Pi controls, and Particle Swarm Optimisation. Batteries recovered from polluted water bodies are now channelled directly into Battery Bin's recycling network instead of being lost to informal disposal.</p>
+        </div>
+
+        <div class="mb-4 p-4 rounded shadow-sm scale-hover" style="background-color: #ffffff; border: 1px solid #ddd;">
+            <h4 class="mb-2" style="color:#2e7d32;">
+                🏘️ <a href="#" style="color:#2e7d32; text-decoration:none;">Added to our network: Rise Organic Homes</a>
+            </h4>
+            <p class="text-muted mb-1"><small>Posted in April 2026</small></p>
+            <p>Rise Organic Homes joins Battery Bin, making it easy for residents to responsibly dispose of used batteries and keep hazardous waste out of their community.</p>
+        </div>
+
+        <!-- March 2026 -->
+        <div class="mb-4 p-4 rounded shadow-sm scale-hover" style="background-color: #ffffff; border: 1px solid #ddd;">
+            <h4 class="mb-2" style="color:#2e7d32;">
+                🌱 <a href="Our Network/udaan-ngo.html" style="color:#2e7d32; text-decoration:none;">Added to our network: Udaan NGO</a>
+            </h4>
+            <p class="text-muted mb-1"><small>Posted in March 2026</small></p>
+            <p>Udaan NGO partners with Battery Bin to bring battery recycling awareness and collection to more communities across the region.</p>
+        </div>
+
+        <div class="mb-4 p-4 rounded shadow-sm scale-hover" style="background-color: #ffffff; border: 1px solid #ddd;">
+            <h4 class="mb-2" style="color:#2e7d32;">
+                🏫 <a href="Our Network/nc-jindal.html" style="color:#2e7d32; text-decoration:none;">Added to our network: N.C. Jindal Public School</a>
+            </h4>
+            <p class="text-muted mb-1"><small>Posted in March 2026</small></p>
+            <p>N.C. Jindal Public School, Punjabi Bagh, joins our network — strengthening battery collection infrastructure and expanding our recycling reach into Delhi.</p>
+        </div>
+
+        <!-- February 2026 -->
+        <div class="mb-4 p-4 rounded shadow-sm scale-hover" style="background-color: #ffffff; border: 1px solid #ddd;">
+            <h4 class="mb-2" style="color:#2e7d32;">
+                🏢 <a href="Our Network/ashiana-le-residency.html" style="color:#2e7d32; text-decoration:none;">Added to our network: Ashiana, Le Residency</a>
+            </h4>
+            <p class="text-muted mb-1"><small>Posted in February 2026</small></p>
+            <p>Ashiana, Le Residency joins Battery Bin, making it easy for residents to drop off used batteries and keep hazardous waste out of their community's waste stream.</p>
+        </div>
+
+        <div class="mb-4 p-4 rounded shadow-sm scale-hover" style="background-color: #ffffff; border: 1px solid #ddd;">
+            <h4 class="mb-2" style="color:#2e7d32;">
+                🎓 <a href="#" style="color:#2e7d32; text-decoration:none;">Added to our network: I.T.S UG Institute</a>
+            </h4>
+            <p class="text-muted mb-1"><small>Posted in February 2026</small></p>
+            <p>I.T.S UG Institute, Mohan Nagar, joins Battery Bin — bringing responsible battery disposal infrastructure to one of Ghaziabad's busy undergraduate campuses.</p>
+        </div>
+
+        <!-- January 2026 -->
+        <div class="mb-4 p-4 rounded shadow-sm scale-hover" style="background-color: #ffffff; border: 1px solid #ddd;">
+            <h4 class="mb-2" style="color:#2e7d32;">
+                🎓 <a href="Our Network/kiet.html" style="color:#2e7d32; text-decoration:none;">Added to our network: KIET Group of Institutions</a>
+            </h4>
+            <p class="text-muted mb-1"><small>Posted in January 2026</small></p>
+            <p>KIET Group of Institutions — one of Delhi NCR's premier engineering universities — joins Battery Bin, channelling the energy of thousands of students and researchers toward responsible battery disposal.</p>
+        </div>
+
+        <div class="mb-4 p-4 rounded shadow-sm scale-hover" style="background-color: #ffffff; border: 1px solid #ddd;">
+            <h4 class="mb-2" style="color:#2e7d32;">
+                🏫 <a href="Our Network/maharishi-vidya-mandir.html" style="color:#2e7d32; text-decoration:none;">Added to our network: Maharishi Vidya Mandir</a>
+            </h4>
+            <p class="text-muted mb-1"><small>Posted in January 2026</small></p>
+            <p>Maharishi Vidya Mandir, Modi Nagar, joins Battery Bin — bringing battery recycling awareness and collection to another well-established school community in Ghaziabad.</p>
+        </div>
+
+        <!-- 2025 -->
+        <div class="year-divider mt-3">2025</div>
+
+        <!-- December 2025 -->
+        <div class="mb-4 p-4 rounded shadow-sm scale-hover" style="background-color: #ffffff; border: 1px solid #ddd;">
+            <h4 class="mb-2" style="color:#2e7d32;">
+                ⛳ <a href="Our Network/skardi-club.html" style="color:#2e7d32; text-decoration:none;">Added to our network: Skardi Club</a>
             </h4>
             <p class="text-muted mb-1"><small>Posted in December 2025</small></p>
-            <p>We have started putting up awareness posters at the school to promote safe battery recycling among
-                students and staff.</p>
-        </div>-->
+            <p>Skardi Club comes on board, giving members and staff a convenient way to recycle their used batteries responsibly.</p>
+        </div>
 
         <div class="mb-4 p-4 rounded shadow-sm scale-hover" style="background-color: #ffffff; border: 1px solid #ddd;">
             <h4 class="mb-2" style="color:#2e7d32;">
-                🏫 <a href="Our Network/vips-delhi.html" style="color:#2e7d32; text-decoration:none;">Added to our
-                    network: VIPS, Delhi
-                    </a>
+                🌱 <a href="#" style="color:#2e7d32; text-decoration:none;">Added to our network: Gharunda</a>
+            </h4>
+            <p class="text-muted mb-1"><small>Posted in December 2025</small></p>
+            <p>Gharunda NGO joins Battery Bin's growing network, helping spread awareness and bring battery recycling closer to more communities in Ghaziabad.</p>
+        </div>
+
+        <div class="mb-4 p-4 rounded shadow-sm scale-hover" style="background-color: #ffffff; border: 1px solid #ddd;">
+            <h4 class="mb-2" style="color:#2e7d32;">
+                🎓 <a href="#" style="color:#2e7d32; text-decoration:none;">Added to our network: I.T.S Institute of Technology &amp; Science</a>
+            </h4>
+            <p class="text-muted mb-1"><small>Posted in December 2025</small></p>
+            <p>I.T.S Institute of Technology &amp; Science, Mohan Nagar, joins Battery Bin — making responsible battery disposal accessible to thousands of students and faculty on one of Ghaziabad's largest technical campuses.</p>
+        </div>
+
+        <!-- November 2025 -->
+        <div class="mb-4 p-4 rounded shadow-sm scale-hover" style="background-color: #ffffff; border: 1px solid #ddd;">
+            <h4 class="mb-2" style="color:#2e7d32;">
+                🚛 <a href="our-network.html#initiatives" style="color:#2e7d32; text-decoration:none;">New Initiative: Municipal Waste Truck × Battery Bin</a>
+            </h4>
+            <p class="text-muted mb-1"><small>Posted in November 2025</small></p>
+            <p>Battery Bin has teamed up with a Ghaziabad municipal waste collection truck. The truck now carries a Battery Bin awareness poster on every route — reaching hundreds of households — and batteries sorted during wet/dry/hazardous segregation are handed to Battery Bin for formal recycling, keeping them out of the hands of informal recyclers.</p>
+        </div>
+
+        <div class="mb-4 p-4 rounded shadow-sm scale-hover" style="background-color: #ffffff; border: 1px solid #ddd;">
+            <h4 class="mb-2" style="color:#2e7d32;">
+                🦷 <a href="#" style="color:#2e7d32; text-decoration:none;">Added to our network: I.T.S Dental College Hospital &amp; Research Centre</a>
+            </h4>
+            <p class="text-muted mb-1"><small>Posted in November 2025</small></p>
+            <p>I.T.S Dental College Hospital &amp; Research Centre, Greater Noida, joins Battery Bin — bringing responsible battery collection to a healthcare and academic campus where precision equipment generates a steady stream of used batteries.</p>
+        </div>
+
+        <!-- October 2025 -->
+        <div class="mb-4 p-4 rounded shadow-sm scale-hover" style="background-color: #ffffff; border: 1px solid #ddd;">
+            <h4 class="mb-2" style="color:#2e7d32;">
+                🎓 <a href="Our Network/vips-delhi.html" style="color:#2e7d32; text-decoration:none;">Added to our network: VIPS, Delhi</a>
             </h4>
             <p class="text-muted mb-1"><small>Posted in October 2025</small></p>
-            <p>VIPS, Delhi  will help us safely collect used phone lithium-ion batteries and keep them out of landfills.
-            </p>
+            <p>VIPS, Delhi will help us safely collect used phone lithium-ion batteries and keep them out of landfills.</p>
+        </div>
+
+        <!-- August 2025 -->
+        <div class="mb-4 p-4 rounded shadow-sm scale-hover" style="background-color: #ffffff; border: 1px solid #ddd;">
+            <h4 class="mb-2" style="color:#2e7d32;">
+                🏫 <a href="Our Network/Ch-Chhabil-Dass-School.html" style="color:#2e7d32; text-decoration:none;">Added to our network: Ch. Chhabil Dass Public School, Patel Nagar</a>
+            </h4>
+            <p class="text-muted mb-1"><small>Posted in August 2025</small></p>
+            <p>Ch. Chhabil Dass Public School, Patel Nagar, joins Battery Bin — opening its classrooms to awareness sessions and hosting dedicated battery collection points across its campus blocks.</p>
         </div>
 
         <div class="mb-4 p-4 rounded shadow-sm scale-hover" style="background-color: #ffffff; border: 1px solid #ddd;">
             <h4 class="mb-2" style="color:#2e7d32;">
-                ⌚ <a href="Our Network/a-sons-exclusives.html" style="color:#2e7d32; text-decoration:none;">Added to our
-                    network: A
-                    Sons Exclusives</a>
+                🤖 <a href="#" style="color:#2e7d32; text-decoration:none;">Added to our network: RoboClub</a>
+            </h4>
+            <p class="text-muted mb-1"><small>Posted in August 2025</small></p>
+            <p>RoboClub, Delhi joins Battery Bin — bringing battery recycling awareness to a community of tech enthusiasts and young innovators who know better than most what's inside the devices they build.</p>
+        </div>
+
+        <!-- July 2025 -->
+        <div class="mb-4 p-4 rounded shadow-sm scale-hover" style="background-color: #ffffff; border: 1px solid #ddd;">
+            <h4 class="mb-2" style="color:#2e7d32;">
+                💻 <a href="#" style="color:#2e7d32; text-decoration:none;">Added to our network: QuantaNova Technologies</a>
             </h4>
             <p class="text-muted mb-1"><small>Posted in July 2025</small></p>
-            <p>They will help us collect button cell and alkaline batteries safely, making recycling more accessible for
-                everyone.</p>
+            <p>QuantaNova Technologies comes on board to support our mission of responsible battery disposal and safe recycling at the workplace.</p>
         </div>
+
+        <!-- June 2025 -->
         <div class="mb-4 p-4 rounded shadow-sm scale-hover" style="background-color: #ffffff; border: 1px solid #ddd;">
             <h4 class="mb-2" style="color:#2e7d32;">
-                🏫 <a href="Our Network/step-by-step.html" style="color:#2e7d32; text-decoration:none;">Added to our
-                    network:
-                    Step By Step School, Noida</a>
+                🍞 <a href="#" style="color:#2e7d32; text-decoration:none;">Added to our network: Melange by Vasvi</a>
+                <span class="launched-badge">✦ Launched by Vasvi</span>
+            </h4>
+            <p class="text-muted mb-1"><small>Posted in June 2025</small></p>
+            <p>Melange by Vasvi — launched by our very own Vasvi — joins Battery Bin's network, helping extend safe battery recycling access to more members of the community.</p>
+        </div>
+
+        <!-- May 2025 -->
+        <div class="mb-4 p-4 rounded shadow-sm scale-hover" style="background-color: #ffffff; border: 1px solid #ddd;">
+            <h4 class="mb-2" style="color:#2e7d32;">
+                ⛳ <a href="Our Network/golf-links-club.html" style="color:#2e7d32; text-decoration:none;">Added to our network: Golf Links Club</a>
             </h4>
             <p class="text-muted mb-1"><small>Posted in May 2025</small></p>
-            <p>Awareness posters have also been placed here to encourage students and teachers to recycle their used
-                batteries responsibly.</p>
+            <p>Golf Links Club joins Battery Bin, enabling members and staff to recycle used batteries conveniently and responsibly.</p>
         </div>
+
+        <!-- April 2025 -->
+        <div class="mb-4 p-4 rounded shadow-sm scale-hover" style="background-color: #ffffff; border: 1px solid #ddd;">
+            <h4 class="mb-2" style="color:#2e7d32;">
+                🛍️ <a href="Our Network/a-sons-exclusives.html" style="color:#2e7d32; text-decoration:none;">Added to our network: A Sons Exclusives</a>
+            </h4>
+            <p class="text-muted mb-1"><small>Posted in April 2025</small></p>
+            <p>They will help us collect button cell and alkaline batteries safely, making recycling more accessible for everyone.</p>
+        </div>
+
+        <div class="mb-4 p-4 rounded shadow-sm scale-hover" style="background-color: #ffffff; border: 1px solid #ddd;">
+            <h4 class="mb-2" style="color:#2e7d32;">
+                🏫 <a href="Our Network/step-by-step.html" style="color:#2e7d32; text-decoration:none;">Added to our network: Step By Step School, Noida</a>
+            </h4>
+            <p class="text-muted mb-1"><small>Posted in April 2025</small></p>
+            <p>Awareness posters have been placed here to encourage students and teachers to recycle their used batteries responsibly.</p>
+        </div>
+
     </main>
-    <!-- End of MID-SECTION -->
 
-
-    <!-- Start of FOOTER -->
+    <!-- FOOTER -->
     <footer>
         <div class="border-bottom border-top border-3 pb-1">
             <div class="py-3 d-flex justify-content-center flex-wrap">
@@ -235,7 +309,6 @@
             <a href="terms-of-service.html" style="color: #2e7d32; text-decoration: none;">Terms of Service</a>
         </div>
     </footer>
-    <!-- End of FOOTER -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

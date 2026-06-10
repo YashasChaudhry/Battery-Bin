@@ -12,89 +12,22 @@
     </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Blogs & Resources | Battery Bin</title>
+    <title>Blogs &amp; Resources | Battery Bin</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="LogoTop.png" type="image/png">
-    <style>
-        body {
-            background-color: #e6f4ea;
-        }
-
-        .navbar-nav .nav-link {
-            color: #2e7d32;
-            font-weight: 500;
-            position: relative;
-            text-decoration: none !important;
-        }
-
-        .navbar-nav .nav-link:not(.active)::after {
-            content: "";
-            display: block;
-            width: 0;
-            height: 2px;
-            background: #2e7d32;
-            transition: width 0.3s;
-            margin: auto;
-        }
-
-        .navbar-nav .nav-link:not(.active):hover::after {
-            width: 100%;
-        }
-
-        .navbar-nav .nav-link.active,
-        .navbar-nav .nav-link.dropdown-toggle.active {
-            background-color: #2e7d32;
-            color: white !important;
-            border-radius: 0.3rem;
-            padding-left: 0.6rem;
-            padding-right: 0.6rem;
-        }
-
-        .navbar-nav .nav-link.active::after,
-        .navbar-nav .nav-link.dropdown-toggle.active::after {
-            content: "";
-            display: block;
-            width: 0;
-            height: 2px;
-            background: white;
-            transition: width 0.3s;
-            margin: auto;
-        }
-
-        .navbar-nav .nav-link.active:hover::after,
-        .navbar-nav .nav-link.dropdown-toggle.active:hover::after {
-            width: 100%;
-        }
-    </style>
 </head>
 
-<body>
+<body class="page-bg-green">
     <!-- NAVBAR -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
                     <img src="logo.png" alt="Battery Bin Logo" class="rounded-circle me-2" style="height: 45px;">
-                    <span class="navbar-brand">Battery Bin</span>
-                    <style>
-                        .navbar-brand {
-                            font-family: 'Segoe UI', 'Helvetica Neue', 'Roboto', 'Arial', sans-serif;
-                            font-weight: 600;
-                            font-size: 1.5rem;
-                            color: #2e7d32;
-                            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-                            transition: color 0.3s;
-                            cursor: pointer;
-                        }
-
-                        .navbar-brand:hover {
-                            color: #27632a;
-                            /* subtle darker shade */
-                        }
-                    </style>
+                    Battery Bin
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -103,7 +36,9 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <div class="mx-auto">
                         <ul class="navbar-nav mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">About Us</a>
@@ -113,28 +48,31 @@
                                     <li><a class="dropdown-item" href="about-us.html#our-impact">Our Impact</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></li>
-                            <li class="nav-item"><a class="nav-link" href="updates.html">Updates</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="how-it-works.html">How It Works</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="updates.html">Updates</a>
+                            </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">Our Network</a>
+                                <a class="nav-link dropdown-toggle" href="our-network.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Our Network</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="our-network.html#step-by-step-school">Step By
-                                            Step
-                                            School, Noida</a></li>
-                                    <li><a class="dropdown-item" href="our-network.html#ch-chhbil-dass">Ch.Chhabil Dass
-                                            Public School, Ghaziabad</a></li>
-                                    <li><a class="dropdown-item" href="our-network.html#vips-delhi">VIPS, Delhi
-                                            </a></li>
-                                    <li><a class="dropdown-item" href="our-network.html#a-sons-exclusives">A.Sons Exclusives, Ghaziabad</a>
-                                    </li>
+                                    <li><a class="dropdown-item" href="our-network.html#delhi">📍 Delhi</a></li>
+                                    <li><a class="dropdown-item" href="our-network.html#ghaziabad">📍 Ghaziabad</a></li>
+                                    <li><a class="dropdown-item" href="our-network.html#noida">📍 Noida</a></li>
+                                    <li><a class="dropdown-item" href="our-network.html#greater-noida">📍 Greater Noida</a></li>
+                                    <li><a class="dropdown-item" href="our-network.html#gurgaon">📍 Gurgaon</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="our-network.html#initiatives">🌊 Initiatives</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
                         </ul>
                     </div>
-                    <a href="blogs-resources.html" class="btn blog-btn ms-lg-3 mt-2 mt-lg-0">Blogs &
-                        Resources</a>
+                    <a href="blogs-resources.html" class="btn blog-btn active-blog ms-lg-3 mt-2 mt-lg-0">Blogs &amp; Resources</a>
                 </div>
             </div>
         </nav>
@@ -152,13 +90,11 @@
                     <div class="p-4 rounded shadow-sm bg-white h-100 scale-hover position-relative"
                         style="overflow: hidden;">
                         <h4 style="color: #2e7d32;">Understanding Battery Recycling</h4>
-                        <p class="text-muted">Why recycling batteries matters, its environmental impact, and how you can
-                            help.</p>
+                        <p class="text-muted">Why recycling batteries matters, its environmental impact, and how you can help.</p>
                         <a href="Blogs & Resources/understandBatteryRecycling-blog1.html"
                             class="btn btn-outline-success">Read More</a>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="p-4 rounded shadow-sm bg-white h-100 scale-hover position-relative"
                         style="overflow: hidden;">
@@ -166,12 +102,10 @@
                             <div class="corner-ribbon-text">COMING SOON</div>
                         </div>
                         <h4 style="color: #2e7d32;">Tips for Safe Battery Disposal</h4>
-                        <p class="text-muted">Simple do's and don'ts to keep battery disposal safe for you and the
-                            planet.</p>
+                        <p class="text-muted">Simple do's and don'ts to keep battery disposal safe for you and the planet.</p>
                         <a href="#" class="btn btn-outline-success disabled">Read More</a>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="p-4 rounded shadow-sm bg-white h-100 scale-hover position-relative"
                         style="overflow: hidden;">
@@ -183,7 +117,6 @@
                         <a href="#" class="btn btn-outline-success disabled">Read More</a>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="p-4 rounded shadow-sm bg-white h-100 scale-hover position-relative"
                         style="overflow: hidden;">
@@ -191,12 +124,10 @@
                             <div class="corner-ribbon-text">COMING SOON</div>
                         </div>
                         <h4 style="color: #2e7d32;">Impact Stories from Our Network</h4>
-                        <p class="text-muted">Inspiring stories from schools and shops part of the Battery Bin
-                            initiative.</p>
+                        <p class="text-muted">Inspiring stories from schools and shops part of the Battery Bin initiative.</p>
                         <a href="#" class="btn btn-outline-success disabled">Read More</a>
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -215,26 +146,21 @@
                 <div class="col-md-6">
                     <div class="p-4 rounded shadow-sm bg-white h-100 scale-hover">
                         <h4 style="color: #2e7d32;">Printable Awareness Poster #1</h4>
-                        <p class="text-muted">Display this poster in schools, offices, or shops to encourage safe
-                            recycling.</p>
+                        <p class="text-muted">Display this poster in schools, offices, or shops to encourage safe recycling.</p>
                         <a href="Blogs & Resources/Don't Trash It - Stash It!.jpg" class="btn btn-outline-success"
-                            download>Download
-                            Poster</a>
+                            download>Download Poster</a>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="p-4 rounded shadow-sm bg-white h-100 scale-hover">
                         <h4 style="color: #2e7d32;">Printable Awareness Poster #2</h4>
-                        <p class="text-muted">Used batteries pollute. We collect them so they can be safely recycled.
-                            Join the movement for a cleaner future.</p>
+                        <p class="text-muted">Used batteries pollute. We collect them so they can be safely recycled. Join the movement for a cleaner future.</p>
                         <a href="Blogs & Resources/Don't Trash It - Bin It!.png" class="btn btn-outline-success"
-                            download>Download
-                            Poster</a>
+                            download>Download Poster</a>
                     </div>
                 </div>
             </div>
         </section>
-
 
         <!-- BATTERY RECYCLING CERTIFICATES -->
         <section>
@@ -251,15 +177,15 @@
                 </div>
                 <div class="col-md-4">
                     <div class="p-2 bg-white rounded shadow-sm text-center scale-hover">
-                        <img src="Blogs & Resources/VIPS, Delhi - Recycling Recognition.png" alt="VIPS, Delhi  Certificate"
+                        <img src="Blogs & Resources/VIPS, Delhi - Recycling Recognition.png" alt="VIPS, Delhi Certificate"
                             class="img-fluid rounded">
                         <p class="mt-2 mb-0" style="color: #2e7d32; font-weight: 500;">VIPS, Delhi</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="p-2 bg-white rounded shadow-sm text-center scale-hover">
-                        <img src="Blogs & Resources/Step By Step School, Noida - Recycling Recognition.png" alt="Step By Step School, Noida Certificate"
-                            class="img-fluid rounded">
+                        <img src="Blogs & Resources/Step By Step School, Noida - Recycling Recognition.png"
+                            alt="Step By Step School, Noida Certificate" class="img-fluid rounded">
                         <p class="mt-2 mb-0" style="color: #2e7d32; font-weight: 500;">Step By Step School, Noida</p>
                     </div>
                 </div>
@@ -271,14 +197,22 @@
     <footer>
         <div class="border-bottom border-top border-3 pb-1">
             <div class="py-3 d-flex justify-content-center flex-wrap">
-                <div class="mx-4 mb-2"><img src="community-driven.png" alt="" style="height: 50px;"><b>Community
-                        Driven</b></div>
-                <div class="mx-4 mb-2"><img src="environment-first.png" alt="" style="height: 50px;"><b>Environment
-                        First</b></div>
-                <div class="mx-4 mb-2"><img src="safe-battery-recycling.png" alt="" style="height: 50px;"><b>Safe
-                        Battery Recycling</b></div>
-                <div class="mx-4 mb-2"><img src="transparent-impact.png" alt="" style="height: 50px;"><b>Transparent
-                        Impact</b></div>
+                <div class="mx-4 mb-2">
+                    <img src="community-driven.png" alt="" style="height: 50px;">
+                    <b>Community Driven</b>
+                </div>
+                <div class="mx-4 mb-2">
+                    <img src="environment-first.png" alt="" style="height: 50px;">
+                    <b>Environment First</b>
+                </div>
+                <div class="mx-4 mb-2">
+                    <img src="safe-battery-recycling.png" alt="" style="height: 50px;">
+                    <b>Safe Battery Recycling</b>
+                </div>
+                <div class="mx-4 mb-2">
+                    <img src="transparent-impact.png" alt="" style="height: 50px;">
+                    <b>Transparent Impact</b>
+                </div>
             </div>
         </div>
         <div class="p-3 text-center" style="font-size: 0.95em;">

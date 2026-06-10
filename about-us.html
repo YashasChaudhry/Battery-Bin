@@ -8,7 +8,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-PVNP1D4VKR');
     </script>
     <meta charset="utf-8">
@@ -16,35 +15,19 @@
     <title>About Us | Battery Bin</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" class="css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="LogoTop.png" type="image/png">
 </head>
 
 <body>
-    <!-- Start of NAVBAR -->
+    <!-- NAVBAR -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
                     <img src="logo.png" alt="Battery Bin Logo" class="rounded-circle me-2" style="height: 45px;">
-                    <span class="navbar-brand">Battery Bin</span>
-                    <style>
-                        .navbar-brand {
-                            font-family: 'Segoe UI', 'Helvetica Neue', 'Roboto', 'Arial', sans-serif;
-                            font-weight: 600;
-                            font-size: 1.5rem;
-                            color: #2e7d32;
-                            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-                            transition: color 0.3s;
-                            cursor: pointer;
-                        }
-
-                        .navbar-brand:hover {
-                            color: #27632a;
-                            /* subtle darker shade */
-                        }
-                    </style>
+                    Battery Bin
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,9 +41,7 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle active" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    About Us
-                                </a>
+                                    data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="about-us.html#our-story">Our Story</a></li>
                                     <li><a class="dropdown-item" href="about-us.html#our-mission">Our Mission</a></li>
@@ -74,20 +55,16 @@
                                 <a class="nav-link" href="updates.html">Updates</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Our Network
-                                </a>
+                                <a class="nav-link dropdown-toggle" href="our-network.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Our Network</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="our-network.html#step-by-step-school">Step By
-                                            Step
-                                            School, Noida</a></li>
-                                    <li><a class="dropdown-item" href="our-network.html#ch-chhbil-dass">Ch.Chhabil Dass
-                                            Public School, Ghaziabad</a></li>
-                                    <li><a class="dropdown-item" href="our-network.html#vips-delhi">VIPS, Delhi
-                                            </a></li>
-                                    <li><a class="dropdown-item" href="our-network.html#a-sons-exclusives">A.Sons Exclusives, Ghaziabad</a>
-                                    </li>
+                                    <li><a class="dropdown-item" href="our-network.html#delhi">📍 Delhi</a></li>
+                                    <li><a class="dropdown-item" href="our-network.html#ghaziabad">📍 Ghaziabad</a></li>
+                                    <li><a class="dropdown-item" href="our-network.html#noida">📍 Noida</a></li>
+                                    <li><a class="dropdown-item" href="our-network.html#greater-noida">📍 Greater Noida</a></li>
+                                    <li><a class="dropdown-item" href="our-network.html#gurgaon">📍 Gurgaon</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="our-network.html#initiatives">🌊 Initiatives</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -95,100 +72,40 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="blogs-resources.html" class="btn blog-btn ms-lg-3 mt-2 mt-lg-0">Blogs &
-                        Resources</a>
+                    <a href="blogs-resources.html" class="btn blog-btn ms-lg-3 mt-2 mt-lg-0">Blogs &amp; Resources</a>
                 </div>
             </div>
         </nav>
     </header>
-    <!-- End of NAVBAR -->
+    <!-- END NAVBAR -->
 
-    <style>
-        /* Remove Bootstrap default underline below dropdown toggles */
-        .navbar-nav .nav-link {
-            color: #2e7d32;
-            font-weight: 500;
-            position: relative;
-            text-decoration: none !important;
-        }
-
-        /* Subtle green underline on hover (except active) */
-        .navbar-nav .nav-link:not(.active)::after {
-            content: "";
-            display: block;
-            width: 0;
-            height: 2px;
-            background: #2e7d32;
-            transition: width 0.3s;
-            margin: auto;
-        }
-
-        .navbar-nav .nav-link:not(.active):hover::after {
-            width: 100%;
-        }
-
-        /* Highlight active nav-link or dropdown-toggle */
-        .navbar-nav .nav-link.active,
-        .navbar-nav .nav-link.dropdown-toggle.active {
-            background-color: #2e7d32;
-            color: white !important;
-            border-radius: 0.3rem;
-            padding-left: 0.6rem;
-            padding-right: 0.6rem;
-        }
-
-        /* Small sustainability-inspired touch: green underline on hover */
-
-
-        /* Add underline animation on hover even for active link */
-        .navbar-nav .nav-link.active::after,
-        .navbar-nav .nav-link.dropdown-toggle.active::after {
-            content: "";
-            display: block;
-            width: 0;
-            height: 1px;
-            background: white;
-            /* white underline when active */
-            transition: width 0.3s;
-            margin: auto;
-        }
-
-        .navbar-nav .nav-link.active:hover::after,
-        .navbar-nav .nav-link.dropdown-toggle.active:hover::after {
-            width: 100%;
-        }
-    </style>
-
-    <!-- Start of MID-SECTION -->
+    <!-- Our Story -->
     <div class="section mb-1 about-us-div" id="our-story">
         <div class="container">
             <div class="row align-items-center">
-                <!-- Text Section -->
                 <div class="col-md-7">
                     <h1>Our Story</h1>
                     <p>
-        Battery Bin began with a simple moment of awareness — I was about to throw away a used battery
-        when I paused and wondered just how harmful it might be. That small hesitation led me to uncover
-        the massive environmental impact of e-waste, especially when batteries are discarded improperly.
+                        Battery Bin began with a simple moment of awareness — I was about to throw away a used battery
+                        when I paused and wondered just how harmful it might be. That small hesitation led me to uncover
+                        the massive environmental impact of e-waste, especially when batteries are discarded improperly.
                     </p>
                     <p>
-        The idea stayed with me until I finally decided to act. At first, I had doubts. I had never led
-        anything like this before, and I wasn’t sure if anyone would support it — or if I’d even find a
-        recycling partner. After countless emails, one company responded. That single reply gave me the
-        push to begin.
+                        The idea stayed with me until I finally decided to act. At first, I had doubts. I had never led
+                        anything like this before, and I wasn't sure if anyone would support it — or if I'd even find a
+                        recycling partner. After countless emails, one company responded. That single reply gave me the
+                        push to begin.
                     </p>
                     <p>
-        Today, Battery Bin is a <strong>student-led initiative</strong> working with <strong>schools,
-        businesses, and NGOs</strong> across the <strong>Delhi NCR region</strong>. We make battery disposal
-        simple and responsible — keeping harmful chemicals out of landfills and protecting the environment.
+                        Today, Battery Bin is a <strong>student-led initiative</strong> working with <strong>schools,
+                        businesses, and NGOs</strong> across the <strong>Delhi NCR region</strong>. We make battery disposal
+                        simple and responsible — keeping harmful chemicals out of landfills and protecting the environment.
                     </p>
                     <p>
                         <em>Having established a strong presence across NCR, our next goal is to expand further and make
-        safe battery disposal accessible on a much larger scale.</em>
-                    </p>ß
-                ß</div>
-
-                <!-- Image Section -->
+                        safe battery disposal accessible on a much larger scale.</em>
+                    </p>
+                </div>
                 <div class="col-md-5 text-center">
                     <img src="Pictures/Our Story.png" alt="Our Story - Battery Bin" class="img-fluid"
                         style="max-width: 100%; border-radius: 12px;">
@@ -197,70 +114,55 @@
         </div>
     </div>
 
-
     <div class="divider"></div>
 
+    <!-- Our Mission -->
     <div class="section about-us-div" id="our-mission">
         <div class="row align-items-center">
-            <!-- Text Section -->
             <div class="col-md-6">
                 <h1>Our Mission</h1>
                 <p><strong>Battery Bin</strong> is a youth-led initiative on a mission to make battery recycling easy,
-        accessible, and meaningful for everyone — from homes and schools to local shops and offices.</p>
-
+                accessible, and meaningful for everyone — from homes and schools to local shops and offices.</p>
                 <p>With active collection points across the <strong>Delhi NCR region</strong>, we work to keep toxic
-        battery waste out of landfills and our environment.</p>
-
+                battery waste out of landfills and our environment.</p>
                 <p>We're not driven by profit — we're powered by purpose. Backed by trusted <strong>recycling
-            partners</strong> and <strong>NGOs</strong>, we exist to protect the planet, one battery at a time.</p>
-
+                partners</strong> and <strong>NGOs</strong>, we exist to protect the planet, one battery at a time.</p>
                 <p><em>As we continue to grow, our mission is to expand beyond NCR and make responsible battery disposal
-        accessible on a much larger scale.</em></p>
+                accessible on a much larger scale.</em></p>
             </div>
-
-            <!-- Image Section -->
             <div class="col-md-6 text-center">
                 <img src="Pictures/Our Mission.png" alt="Battery Bin Mission" class="img-fluid rounded shadow-sm">
             </div>
         </div>
     </div>
 
-
-
     <div class="divider"></div>
 
+    <!-- Our Impact -->
     <div class="section about-us-div" id="our-impact">
         <div class="row align-items-center">
-            <!-- Text Content -->
             <div class="col-md-6">
                 <h1>Our Impact</h1>
                 <p>Small steps lead to big change — and Battery Bin is proof of that.</p>
-
                 <p>We've already prevented hundreds of harmful batteries from polluting landfills and soil, thanks to
-        our growing network of collection points across the <strong>Delhi NCR region</strong>.</p>
-
+                our growing network of collection points across the <strong>Delhi NCR region</strong>.</p>
                 <ul>
                     <li>🏫 Active in schools, colleges, shops, and offices across Delhi NCR</li>
                     <li>♻️ Collaborating with certified recyclers and NGOs to ensure safe disposal</li>
                     <li>📢 Reached over <strong>5,000+ individuals</strong> with our message of safe recycling</li>
                 </ul>
-
                 <p>As we continue to expand, our goal is to create an even larger impact — building a cleaner, safer future,
-        one battery at a time.</p>
-</div>
-
-            <!-- Image -->
+                one battery at a time.</p>
+            </div>
             <div class="col-md-6 text-center">
                 <img src="Pictures/Our Impact.png" alt="Battery Bin Impact" class="img-fluid rounded shadow-sm">
             </div>
         </div>
     </div>
 
-
     <div class="divider"></div>
-    <!-- End of MID-SECTION -->
 
-    <!-- Start of FOOTER -->
+    <!-- FOOTER -->
     <footer>
         <div class="border-bottom border-top border-3 pb-1">
             <div class="py-3 d-flex justify-content-center flex-wrap">
@@ -288,11 +190,33 @@
             <a href="terms-of-service.html" style="color: #2e7d32; text-decoration: none;">Terms of Service</a>
         </div>
     </footer>
-    <!-- End of FOOTER -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+        <script>
+  document.querySelectorAll('.navbar-nav .dropdown-item').forEach(link => {
+    link.addEventListener('click', () => {
+      const target = link.getAttribute('href');
+      const isSamePageAnchor = target && target.includes('#') && 
+        (target.startsWith('#') || target.split('#')[0] === window.location.pathname.split('/').pop());
+
+      if (isSamePageAnchor) {
+        document.querySelectorAll('.navbar-nav .dropdown-menu.show').forEach(menu => {
+          menu.classList.remove('show');
+        });
+        document.querySelectorAll('.navbar-nav .dropdown-toggle.show').forEach(toggle => {
+          toggle.classList.remove('show');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+
+        const navbarCollapse = document.getElementById('navbarNav');
+        const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+        if (bsCollapse) bsCollapse.hide();
+      }
+    });
+  });
+</script>
 </body>
 
 </html>

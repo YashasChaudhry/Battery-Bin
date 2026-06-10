@@ -8,7 +8,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-PVNP1D4VKR');
     </script>
     <meta charset="utf-8">
@@ -16,37 +15,19 @@
     <title>How It Works | Battery Bin</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" class="css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="LogoTop.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
-    <!-- Start of NAVBAR -->
+    <!-- NAVBAR -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
                     <img src="logo.png" alt="Battery Bin Logo" class="rounded-circle me-2" style="height: 45px;">
-                    <span class="navbar-brand">Battery Bin</span>
-                    <style>
-                        .navbar-brand {
-                            font-family: 'Segoe UI', 'Helvetica Neue', 'Roboto', 'Arial', sans-serif;
-                            font-weight: 600;
-                            font-size: 1.5rem;
-                            color: #2e7d32;
-                            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-                            transition: color 0.3s;
-                            cursor: pointer;
-                        }
-
-                        .navbar-brand:hover {
-                            color: #27632a;
-                            /* subtle darker shade */
-                        }
-                    </style>
+                    Battery Bin
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,9 +41,7 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    About Us
-                                </a>
+                                    aria-expanded="false">About Us</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="about-us.html#our-story">Our Story</a></li>
                                     <li><a class="dropdown-item" href="about-us.html#our-mission">Our Mission</a></li>
@@ -76,20 +55,16 @@
                                 <a class="nav-link" href="updates.html">Updates</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Our Network
-                                </a>
+                                <a class="nav-link dropdown-toggle" href="our-network.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Our Network</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="our-network.html#step-by-step-school">Step By
-                                            Step
-                                            School, Noida</a></li>
-                                    <li><a class="dropdown-item" href="our-network.html#ch-chhbil-dass">Ch.Chhabil Dass
-                                            Public School, Ghaziabad</a></li>
-                                    <li><a class="dropdown-item" href="our-network.html#vips-delhi">VIPS, Delhi
-                                            </a></li>
-                                    <li><a class="dropdown-item" href="our-network.html#a-sons-exclusives">A.Sons Exclusives, Ghaziabad</a>
-                                    </li>
+                                    <li><a class="dropdown-item" href="our-network.html#delhi">📍 Delhi</a></li>
+                                    <li><a class="dropdown-item" href="our-network.html#ghaziabad">📍 Ghaziabad</a></li>
+                                    <li><a class="dropdown-item" href="our-network.html#noida">📍 Noida</a></li>
+                                    <li><a class="dropdown-item" href="our-network.html#greater-noida">📍 Greater Noida</a></li>
+                                    <li><a class="dropdown-item" href="our-network.html#gurgaon">📍 Gurgaon</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="our-network.html#initiatives">🌊 Initiatives</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -97,105 +72,14 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="blogs-resources.html" class="btn blog-btn ms-lg-3 mt-2 mt-lg-0">Blogs &
-                        Resources</a>
+                    <a href="blogs-resources.html" class="btn blog-btn ms-lg-3 mt-2 mt-lg-0">Blogs &amp; Resources</a>
                 </div>
             </div>
         </nav>
     </header>
-    <!-- End of NAVBAR -->
+    <!-- END NAVBAR -->
 
-    <style>
-        /* Remove Bootstrap default underline below dropdown toggles */
-        .navbar-nav .nav-link {
-            color: #2e7d32;
-            font-weight: 500;
-            position: relative;
-            text-decoration: none !important;
-        }
-
-        /* Subtle green underline on hover (except active) */
-        .navbar-nav .nav-link:not(.active)::after {
-            content: "";
-            display: block;
-            width: 0;
-            height: 2px;
-            background: #2e7d32;
-            transition: width 0.3s;
-            margin: auto;
-        }
-
-        .navbar-nav .nav-link:hover::after {
-            width: 100%;
-        }
-
-        /* Highlight active nav-link or dropdown-toggle */
-        .navbar-nav .nav-link.active,
-        .navbar-nav .nav-link.dropdown-toggle.active {
-            background-color: #2e7d32;
-            color: white !important;
-            border-radius: 0.3rem;
-            padding-left: 0.6rem;
-            padding-right: 0.6rem;
-        }
-    </style>
-
-
-    <style>
-        /* Style all nav links */
-        .navbar-nav .nav-link {
-            color: #2e7d32;
-            font-weight: 500;
-            text-decoration: none !important;
-            position: relative;
-        }
-
-        /* Remove underline from dropdown toggles */
-        .navbar-nav .dropdown-toggle::after {
-            display: none;
-        }
-
-        /* Subtle green underline on hover for normal links (except active) */
-        .navbar-nav .nav-link:not(.active):hover::after {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 2px;
-            background: #2e7d32;
-            margin: auto;
-            transition: width 0.3s;
-        }
-
-        /* Active link style */
-        .navbar-nav .nav-link.active,
-        .navbar-nav .dropdown-toggle.active {
-            background-color: #2e7d32;
-            color: #fff !important;
-            border-radius: 0.3rem;
-            padding-left: 0.6rem;
-            padding-right: 0.6rem;
-        }
-
-        /* Add underline animation on hover even for active link */
-        .navbar-nav .nav-link.active::after,
-        .navbar-nav .nav-link.dropdown-toggle.active::after {
-            content: "";
-            display: block;
-            width: 0;
-            height: 2px;
-            background: white;
-            /* white underline when active */
-            transition: width 0.3s;
-            margin: auto;
-        }
-
-        .navbar-nav .nav-link.active:hover::after,
-        .navbar-nav .nav-link.dropdown-toggle.active:hover::after {
-            width: 100%;
-        }
-    </style>
-
-    <!-- Start of MID-SECTION -->
+    <!-- How It Works content -->
     <section class="how-it-works-large container">
         <h1 class="text-center mb-3">How It Works</h1>
 
@@ -222,8 +106,7 @@
                 <div class="col-md-8">
                     <div class="step-number mb-2">2</div>
                     <h2>Drop Them in the Battery Bin</h2>
-                    <p>Find the nearest Battery Bin and drop them safely. Each bin is designed for secure storage and
-                        transport.</p>
+                    <p>Find the nearest Battery Bin and drop them safely. Each bin is designed for secure storage and transport.</p>
                 </div>
             </div>
         </div>
@@ -237,16 +120,13 @@
                 <div class="col-md-8">
                     <div class="step-number mb-2">3</div>
                     <h2>We Handle Safe Recycling</h2>
-                    <p>We collect the batteries and ensure they’re recycled responsibly, keeping harmful chemicals out
-                        of nature.</p>
+                    <p>We collect the batteries and ensure they're recycled responsibly, keeping harmful chemicals out of nature.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- End of MID-SECTION -->
-
-    <!-- Start of FOOTER -->
+    <!-- FOOTER -->
     <footer>
         <div class="border-bottom border-top border-3 pb-1">
             <div class="py-3 d-flex justify-content-center flex-wrap">
@@ -274,7 +154,6 @@
             <a href="terms-of-service.html" style="color: #2e7d32; text-decoration: none;">Terms of Service</a>
         </div>
     </footer>
-    <!-- End of FOOTER -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
